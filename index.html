@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BOOKLY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./src/output.css">
 </head>
+
 <body>
     <header class="py-4">
         <div class="container mx-auto flex items-center justify-between">
             <div class="flex items-center gap-12">
                 <div class="logo">
                     <a href="#">
-                        <img src="./assest/img/logo.svg"/>
+                        <img src="./assest/img/logo.svg" />
                     </a>
                 </div>
 
@@ -38,21 +44,23 @@
             </div>
 
             <div class="flex items-center gap-4">
-                <div class="flex items-center gap-2 w-61 h-13.5 bg-[#F6F3F5] border border-[#C7C5D2] rounded-full px-4 py-2">
-                    <img src="./assest/img/icons/search.svg" class="w-4 h-4"/>
-                    <input type="text" placeholder="Search books..." class="bg-transparent outline-none text-sm w-full"/>
+                <div
+                    class="flex items-center gap-2 w-61 h-13.5 bg-[#F6F3F5] border border-[#C7C5D2] rounded-full px-4 py-2">
+                    <img src="./assest/img/icons/search.svg" class="w-4 h-4" />
+                    <input type="text" placeholder="Search books..."
+                        class="bg-transparent outline-none text-sm w-full" />
                 </div>
 
                 <div class="icon">
                     <ul class="flex items-center gap-4">
                         <li>
                             <a href="#">
-                                <img src="./assest/img/icons/shopping.svg"/>
+                                <img src="./assest/img/icons/shopping.svg" />
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="./assest/img/icons/profile.svg"/>
+                                <img src="./assest/img/icons/profile.svg" />
                             </a>
                         </li>
                     </ul>
@@ -60,5 +68,159 @@
             </div>
         </div>
     </header>
+    <hero>
+        <section
+            class="bg-background h-181 container mx-auto flex items-center justify-between pt-24  pb-32 gap-6 px-10">
+
+            <div>
+                <h2 class="text-[48px] font-playfair font-bold">Your Next Favorite Book is</h2>
+                <h2 class="text-navy text-[48px] font-playfair font-bold">One Click Away</h2>
+                <p class="text-[16px] text-gray w-100 mb-6">Explore our curated collection of literary masterpieces,
+                    contemporary bestsellers, and digital treasures. From physical
+                    copies to instant e-books, your journey starts here.</p>
+                <div class="flex items-center  gap-4">
+                    <a href="#" class="bg-navy text-white rounded-lg px-8 py-4.5 flex items-center gap-2 ">
+                        Browse Books
+                        <img src="./assest/img/icons/browse.svg" />
+                    </a>
+                    <a href="#"
+                        class=" border-2 rounded-lg border-orange text-orange flex items-center gap-2 py-4 px-8">
+                        Get an E-Book
+                        <img src="./assest/img/icons/phone.svg" />
+                    </a>
+                </div>
+            </div>
+            <div>
+                <img src="./assest/img/books.png" class="w-full h-auto" />
+            </div>
+
+        </section>
+    </hero>
+    <section class="container mx-auto px-10 py-12 bg-white">
+        <div class=" flex items-center gap-4 overflow-x-auto whitespace-nowrap py-2 scrollbar-none">
+
+            <a href="#" class="genres">
+                <img src="./assest/img/icons/Fantasy.png" class="size-5" />
+                Fantasy
+            </a>
+            <a href="#" class="genres">
+                <img src="./assest/img/icons/Sci-Fi.png" class="size-5" />
+                Sci-Fi
+            </a>
+            <a href="#" class="genres">
+                <img src="./assest/img/icons/Classic.png" class="size-5" />
+                Classic
+            </a>
+            <a href="#" class="genres">
+                <img src="./assest/img/icons/Children's.png" class="size-5" />
+                Children's
+            </a>
+            <a href="#" class="genres">
+                <img src="./assest/img/icons/Romance.png" class="size-5" />
+                Romance
+            </a>
+            <a href="#" class="genres">
+                <img src="./assest/img/icons/Horror.png" class="size-5" />
+                Horror
+            </a>
+            <a href="#" class="genres">
+                <img src="./assest/img/icons/Self-Development.png" class="size-5" />
+                Self-Development
+            </a>
+            <a href="#" class="genres">
+                <img src="./assest/img/icons/History.png" class="size-5" />
+                History
+            </a>
+            <a href="#" class="genres">
+                <img src="./assest/img/icons/Religions.png" class="size-5" />
+                Religions
+            </a>
+        </div>
+    </section>
+    <section class="container items-center mx-auto bg-background px-10 pt-24 pb-12">
+        <div class=" flex  w-full justify-between items-end">
+            <div>
+                <h3 class="text-dark-gray font-playfair font-bold text-[32px]">Weekly Bestsellers</h3>
+                <p class="text-gray mt-2">The most talked-about books this week.</p>
+            </div>
+            <a href="#" class="text-navy font-bold flex items-center gap-[7.99px]">
+                View All
+                <img src="./assest/img/icons/arrow.svg" />
+            </a>
+        </div>
+        <div class="items text-left grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-12">
+            <div class="item">
+                <img src="./assest/img/the cosmic atlas.png" class="w-full rounded-xl" />
+                <h3 class="text-xl font-bold pt-4 pb-1">The Cosmic Atlas</h3>
+                <p class="text-gray text-base mb-1">Elara Vance</p>
+                <div class="mt-auto flex items-center justify-between pt-1">
+                    <p class="text-navy text-base font-bold"> <span>$</span>24.99</p>
+                    <button class="bg-orange w-[32px] h-[42px] rounded-[8px]  flex items-center justify-center ">
+                        <img src="./assest/img/icons/Shopping cart.svg" />
+                    </button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./assest/img/the silent clock.png" class="w-full rounded-xl" />
+                <h3 class="text-xl font-bold pt-4 pb-1">The Silent Clock</h3>
+                <p class="text-gray text-base mb-1 ">Elara Vance</p>
+                <div class="mt-auto flex items-center justify-between pt-1">
+                    <p class="text-navy text-base font-bold"> <span>$</span>19.50</p>
+                    <button class="bg-orange w-[32px] h-[42px] rounded-[8px]  flex items-center justify-center ">
+                        <img src="./assest/img/icons/Shopping cart.svg" />
+                    </button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./assest/img/the veiled realm.png" class="w-full rounded-xl" />
+                <h3 class="text-xl font-bold pt-4 pb-1">The Veiled Realm</h3>
+                <p class="text-gray text-base mb-1">Eliza Vance</p>
+                <div class="mt-auto flex items-center justify-between pt-1">
+                    <p class="text-navy text-base font-bold"> <span>$</span>22.00</p>
+                    <button class="bg-orange w-[32px] h-[42px] rounded-lg  flex items-center justify-center">
+                        <img src="./assest/img/icons/Shopping cart.svg" />
+                    </button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./assest/img/find your path.png" class="w-full rounded-xl" />
+                <h3 class="text-xl font-bold pt-4 pb-1">Find Your Path Forward</h3>
+                <p class="text-gray text-base mb-1">Eliza J. Reed</p>
+                <div class="mt-auto flex items-center justify-between pt-1">
+                    <p class="text-navy text-base font-bold"> <span>$</span>28.00</p>
+                    <button class="bg-orange w-[32px] h-[42px] rounded-lg flex items-center justify-center">
+                        <img src="./assest/img/icons/Shopping cart.svg" />
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-background container mx-auto">
+        <div class="bg-orange mb-16 mt-17 rounded-3xl flex items-center justify-between gap-12 px-20 py-20">
+            <div class="max-w-136 flex flex-col items-start text-left">
+                <span class="bg-brown/10 text-brown text-xs font-bold px-4 py-1 rounded-full mb-6 inline-block">
+                    LIMITED OFFER
+                </span>
+                <h2 class="text-brown font-playfair font-bold text-5xl mb-6">
+                    Read Anywhere, Anytime with E-Books
+                </h2>
+
+                <p class="text-brown/90 text-base mb-8">
+                    Access your entire library on any device. Get 20% off your first 3 e-book purchases this month.
+                </p>
+
+                <a href="#" class="bg-navy text-white font-bold px-10 py-4 rounded-lg inline-block">
+                    Shop E-Books
+                </a>
+            </div>
+
+            <div class="flex justify-center">
+                <img src="./assest/img/read.png" class="w-md h-61 rounded-xl" />
+            </div>
+        </div>
+
+
+    </section>
 </body>
+
 </html>

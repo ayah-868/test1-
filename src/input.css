@@ -4,4 +4,15 @@
     --color-gray:#464651;
     --color-navy:#171464;
     --color-background:#FCF8FB;
+    --color-orange:#FEA619;
+    --color-dark-gray:#1B1B1D;
+    --color-brown:#684000;
+    --font-playfair: "Playfair Display";
+}
+
+
+@layer components{
+    .genres{
+        @apply  flex items-center gap-2 bg-background border border-dark-gray py-3 px-6 rounded-full;
+    }
 }
