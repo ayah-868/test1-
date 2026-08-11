@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book details</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body>
+    <header class="py-4 border border-charcoal">
+        <div class="container mx-auto flex items-center justify-between ">
+            <div class="flex items-center gap-12">
+                <div class="logo">
+                    <a href="#">
+                        <img src="./assest/img/logo.svg" />
+                    </a>
+                </div>
+
+                <nav>
+                    <ul class="flex gap-6 items-center text-xs">
+                        <li>
+                            <a href="#" class="text-gray">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="font-bold text-navy border-b-2 border-navy pb-1">Browse</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray">Categories</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray">Translate</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <div
+                    class="flex items-center gap-2 w-61 h-13.5 bg-off-white border border-charcoal rounded-full px-4 py-2">
+                    <img src="./assest/img/icons/search.svg" class="w-4 h-4" />
+                    <input type="text" placeholder="Search books..."
+                        class="bg-transparent outline-none text-sm w-full" />
+                </div>
+
+                <div class="icon">
+                    <ul class="flex items-center gap-4">
+                        <li>
+                            <a href="#">
+                                <img src="./assest/img/icons/shopping.svg" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./assest/img/icons/profile.svg" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <hero>
+        <section class=" bg-background  border border-charcoal">
+            <div class="container  mx-auto">
+                <div class=" flex text-start text-gray text-xs mb-8 pt-12 gap-2">
+                    <a href="index.html" class="gap-1">
+                        Home <span>></span>
+                    </a>
+                    <a href="#" class="gap-1">
+                        Browse <span>></span>
+                    </a>
+                    <span class="text-navy font-medium">The Alchemist of Shadows</span>
+                </div>
+                <div class=" grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                    <div class=" relative w-full  rounded-lg">
+                        <span
+                            class="absolute top-4 left-4 z-10 bg-orange text-[#2A1700] text-base font-bold px-3 py-1 rounded-full shadow-md">
+                            Best Seller
+                        </span>
+                        <img src="./assest/img/The Alchemist of Shadows.png" class=" block rounded-lg" />
+                    </div>
+                    <div>
+                        <span
+                            class="bg-[#2E2D7A] text rounded-full text-[#9998ec] text-base px-3 py-1 mb-2 inline-block">Mystery
+                            &
+                            Thriller</span>
+
+                        <h1 class="font-playfair font-bold text-[32px] lg:text-4xl mb-2 pt-2">
+                            The Alchemist of Shadows
+                        </h1>
+                        <p class="text-gray text-base mb-2">
+                            by <span class="text-[#855300] font-medium">Evelyn Thorpe</span>
+                        </p>
+                        <div class="flex gap-4 pt-2 items-center mb-2">
+                            <div class="flex text-orange gap-1">
+                                <span>★★★★</span>
+                                <span class="text-transparent [-webkit-text-stroke:1px_#FF9800]">★</span>
+                            </div>
+                            <span class="text-xs text-gray">4.8 (1,260 Reviews)</span>
+                        </div>
+                        <div class="flex gap-4 mb-8 pt-4 items-center">
+                            <span class="text-navy font-bold text-5xl font-playfair">$24.99</span>
+                            <span class="text-charcoal text-xl line-through">$35.00</span>
+                            <div class="bg-[#FFDAD6] text-[#BA1A1A] text-xs px-2 py-0.5 rounded-sm">30% OFF</div>
+                        </div>
+
+                        <div class=" mb-6 flex flex-col gap-4">
+                            <div class="flex items-center gap-4">
+                                <div class="flex items-center border border-charcoal rounded-lg overflow-hidden py-2">
+                                    <button class="px-4 text-dark-gray hover:bg-gray/10 transition">-</button>
+                                    <span class="px-4 font-medium text-dark-gray">1</span>
+                                    <button class="px-4 text-dark-gray hover:bg-gray/10 transition">+</button>
+                                </div>
+
+                                <button
+                                    class="bg-navy text-white text-base flex items-center gap-2 px-[88.25px] py-3 rounded-lg">
+                                    <img src="./assest/img/icons/shope.svg" />
+                                    <span>Add to Cart</span>
+                                </button>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <button
+                                    class=" bg-orange rounded-lg text-[#2A1700] py-4 px-[153.31px] text-base font-bold">Buy
+                                    Now</button>
+                                <button
+                                    class="border border-charcoal rounded-lg p-3.5 flex items-center justify-center">
+                                    <img src="./assest/img/icons/heart.svg" />
+                                </button>
+                            </div>
+                        </div>
+                        <div class="border-t border-charcoal pt-6 flex items-center gap-8 text-xs text-gray">
+                            <div class="flex items-center gap-2">
+                                <img src="./assest/img/icons/delivery.svg" />
+                                <span>Free Delivery over $50</span>
+                            </div>
+
+                            <div class="flex items-center gap-2">
+                                <img src="./assest/img/icons/secure.svg" />
+                                <span>Secure Transaction</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-8">
+                    <div class="gap-8 flex items-start text-base border-b border-charcoal pt-8 mb-8">
+                        <button class="text-navy font-medium border-b-2 border-navy pb-4">DESCRIPTION</button>
+                        <button class="text-gray pb-4">PRODUCT DETAILS</button>
+                        <button class="text-gray pb-4">REVIEWS (1,240)</button>
+                    </div>
+                    <div class=" text-base text-gray pr-108">
+                        <p class="mb-6">
+                            In the heart of an Victorian-era London that never was, a young apprentice discovers an
+                            ancient
+                            secret hidden within the clockwork shadows of the Great Exhibition. Evelyn Thorne's "The
+                            Alchemist
+                            of Shadows" is a breathtaking masterpiece of steampunk intrigue, blending high-stakes
+                            mystery with
+                            a touch of the supernatural.
+                        </p>
+                        <p>
+                            As the city’s brightest minds gather, a series of impossible disappearances threatens the
+                            empire.
+                            Silas Vane, a man with a past he'd rather forget, must navigate the labyrinthine tunnels and
+                            soaring
+                            towers of a metropolis on the edge of a new era.
+                        </p>
+                    </div>
+                </div>
+                <div class=" items-center pb-12 ">
+                    <div class=" flex justify-between items-end mb-8 pt-12">
+                        <div>
+                            <h3 class="text-navy font-playfair font-bold text-[32px]">You Might Also Like</h3>
+                            <p class="text-gray text-base">Recommended based on this title</p>
+                        </div>
+                        <a href="#" class="text-[#855300] font-bold flex items-center gap-1">
+                            See All
+                            <img src="./assest/img/icons/red-arrow.svg" />
+                        </a>
+                    </div>
+                    <div class="items text-left grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="item">
+                            <img src="./assest/img/the cosmic atlas.png" class="w-full" />
+                            <h3 class="text-base font-bold text-dark-gray mt-4">Chronicles of Aether</h3>
+                            <p class="text-gray text-xs mb-1">Marcus Thorne</p>
+                            <div class="mt-auto flex items-center justify-between pt-1">
+                                <p class="text-navy text-base font-bold"> <span>$</span>19.99</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./assest/img/the silent clock.png" class="w-full " />
+                            <h3 class="text-base font-bold text-dark-gray mt-4">The Midnight Orrery</h3>
+                            <p class="text-gray text-xs mb-1 ">Elena Vance</p>
+                            <div class="mt-auto flex items-center justify-between pt-1">
+                                <p class="text-navy text-base font-bold"> <span>$</span>22.50</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./assest/img/the veiled realm.png" class="w-full " />
+                            <h3 class="text-base font-bold text-dark-gray mt-4">Clockwork Silence</h3>
+                            <p class="text-gray text-xs mb-1">Julian Gray</p>
+                            <div class="mt-auto flex items-center justify-between pt-1">
+                                <p class="text-navy text-base font-bold"> <span>$</span>18.99</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./assest/img/find your path.png" class="w-full" />
+                            <h3 class="text-base font-bold text-dark-gray mt-4">Shadows of Empire</h3>
+                            <p class="text-gray text-xs mb-1">L.K. Sterling</p>
+                            <div class="mt-auto flex items-center justify-between pt-1">
+                                <p class="text-navy text-base font-bold"> <span>$</span>21.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </hero>
+    <footer class="bg-navy text-white pt-12 pb-8 ">
+        <div class="container mx-auto ">
+            <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-start gap-6 mb-6">
+                <div>
+                    <h3 class="font-playfair font-bold text-[32px] mb-[14.75]">
+                        Bookly
+                    </h3>
+                    <div class="text-white/80 text-sm flex flex-col">
+                        <p> Empowering authors and connecting readers through the magic of literature.</p>
+                        <p> Your next great story starts here. </p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-[12px] mb-4 font-bold uppercase">Explore</h4>
+                    <ul class="text-base text-white/80">
+                        <li class="mb-2">
+                            <a href="#">
+                                Best Sellers
+
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">
+                                New Releases
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">
+                                Categories
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Audiobooks
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-[12px] mb-4 font-bold uppercase">Account</h4>
+                    <ul class="text-base text-white/80">
+                        <li class="mb-2">
+                            <a href="#">
+                                My Profile
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">
+                                Order History
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">
+                                Wishlist
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Settings
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-[12px] mb-4 font-bold uppercase">CONTACT</h4>
+                    <div class="text-base text-white/80 flex flex-col gap-3 mb-6">
+                        <div class="flex items-center gap-2">
+                            <img src="./assest/img/icons/email.svg" />
+                            <span>support@bookly.com</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <img src="./assest/img/icons/telphone.svg" />
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition">
+                            <img src="./assest/img/icons/globe.svg" />
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition">
+                            <img src="./assest/img/icons/social.svg" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 flex text-white/60 text-sm justify-between pt-8">
+                <div>
+                    <p>© 2024 Bookly. All rights reserved.</p>
+                </div>
+                <div class=" flex gap-6">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+</html>

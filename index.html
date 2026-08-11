@@ -13,8 +13,8 @@
 </head>
 
 <body>
-    <header class="py-4">
-        <div class="container mx-auto flex items-center justify-between">
+    <header class="py-4 border border-charcoal">
+        <div class="container mx-auto flex items-center justify-between ">
             <div class="flex items-center gap-12">
                 <div class="logo">
                     <a href="#">
@@ -23,9 +23,9 @@
                 </div>
 
                 <nav>
-                    <ul class="flex gap-6 items-center">
+                    <ul class="flex gap-6 items-center text-xs">
                         <li>
-                            <a href="#" class="font-semibold text-navy border-b-2 border-navy pb-1">Home</a>
+                            <a href="#" class="font-bold text-navy border-b-2 border-navy pb-1">Home</a>
                         </li>
                         <li>
                             <a href="#" class="text-gray">Browse</a>
@@ -45,7 +45,7 @@
 
             <div class="flex items-center gap-4">
                 <div
-                    class="flex items-center gap-2 w-61 h-13.5 bg-[#F6F3F5] border border-[#C7C5D2] rounded-full px-4 py-2">
+                    class="flex items-center gap-2 w-61 h-13.5 bg-off-white border border-charcoal rounded-full px-4 py-2">
                     <img src="./assest/img/icons/search.svg" class="w-4 h-4" />
                     <input type="text" placeholder="Search books..."
                         class="bg-transparent outline-none text-sm w-full" />
@@ -69,228 +69,237 @@
         </div>
     </header>
     <hero>
-        <section
-            class="bg-background h-181 container mx-auto flex items-center justify-between pt-24  pb-32 gap-6 px-10">
-
-            <div>
-                <h2 class="text-[48px] font-playfair font-bold">Your Next Favorite Book is</h2>
-                <h2 class="text-navy text-[48px] font-playfair font-bold">One Click Away</h2>
-                <p class="text-[16px] text-gray w-100 mb-6">Explore our curated collection of literary masterpieces,
-                    contemporary bestsellers, and digital treasures. From physical
-                    copies to instant e-books, your journey starts here.</p>
-                <div class="flex items-center  gap-4">
-                    <a href="#" class="bg-navy text-white rounded-lg px-8 py-4.5 flex items-center gap-2 ">
-                        Browse Books
-                        <img src="./assest/img/icons/browse.svg" />
-                    </a>
-                    <a href="#"
-                        class=" border-2 rounded-lg border-orange text-orange flex items-center gap-2 py-4 px-8">
-                        Get an E-Book
-                        <img src="./assest/img/icons/phone.svg" />
-                    </a>
+        <section class="bg-background border border-charcoal  pt-24  pb-32 gap-6 px-10">
+            <div class="container mx-auto flex items-center justify-between">
+                <div>
+                    <h2 class="text-[48px] font-playfair font-bold">Your Next Favorite Book is</h2>
+                    <h2 class="text-navy text-[48px] font-playfair font-bold">One Click Away</h2>
+                    <p class="text-[16px] text-gray w-100 mb-6">Explore our curated collection of literary masterpieces,
+                        contemporary bestsellers, and digital treasures. From physical
+                        copies to instant e-books, your journey starts here.</p>
+                    <div class="flex items-center  gap-4">
+                        <a href="#" class="bg-navy text-white rounded-lg px-8 py-4.5 flex items-center gap-2 ">
+                            Browse Books
+                            <img src="./assest/img/icons/browse.svg" />
+                        </a>
+                        <a href="#"
+                            class=" border-2 rounded-lg border-orange text-orange flex items-center gap-2 py-4 px-8">
+                            Get an E-Book
+                            <img src="./assest/img/icons/phone.svg" />
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <img src="./assest/img/books.png" class="w-125 h-125" />
                 </div>
             </div>
-            <div>
-                <img src="./assest/img/books.png" class="w-full h-auto" />
-            </div>
-
         </section>
     </hero>
-    <section class="container mx-auto px-10 py-12 bg-white">
-        <div class=" flex items-center gap-4 overflow-x-auto whitespace-nowrap py-2 scrollbar-none">
+    <section class=" px-10 py-12 bg-white border border-charcoal">
+        <div class="container mx-auto">
+            <div class=" flex items-center gap-4 overflow-x-auto whitespace-nowrap py-2 scrollbar-none">
 
-            <a href="#" class="genres">
-                <img src="./assest/img/icons/Fantasy.png" class="size-5" />
-                Fantasy
-            </a>
-            <a href="#" class="genres">
-                <img src="./assest/img/icons/Sci-Fi.png" class="size-5" />
-                Sci-Fi
-            </a>
-            <a href="#" class="genres">
-                <img src="./assest/img/icons/Classic.png" class="size-5" />
-                Classic
-            </a>
-            <a href="#" class="genres">
-                <img src="./assest/img/icons/Children's.png" class="size-5" />
-                Children's
-            </a>
-            <a href="#" class="genres">
-                <img src="./assest/img/icons/Romance.png" class="size-5" />
-                Romance
-            </a>
-            <a href="#" class="genres">
-                <img src="./assest/img/icons/Horror.png" class="size-5" />
-                Horror
-            </a>
-            <a href="#" class="genres">
-                <img src="./assest/img/icons/Self-Development.png" class="size-5" />
-                Self-Development
-            </a>
-            <a href="#" class="genres">
-                <img src="./assest/img/icons/History.png" class="size-5" />
-                History
-            </a>
-            <a href="#" class="genres">
-                <img src="./assest/img/icons/Religions.png" class="size-5" />
-                Religions
-            </a>
-        </div>
-    </section>
-    <section class="container items-center mx-auto bg-background px-10 pt-24 pb-12">
-        <div class=" flex  w-full justify-between items-end">
-            <div>
-                <h3 class="text-dark-gray font-playfair font-bold text-[32px]">Weekly Bestsellers</h3>
-                <p class="text-gray mt-2">The most talked-about books this week.</p>
-            </div>
-            <a href="#" class="text-navy font-bold flex items-center gap-[7.99px]">
-                View All
-                <img src="./assest/img/icons/arrow.svg" />
-            </a>
-        </div>
-        <div class="items text-left grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-12">
-            <div class="item">
-                <img src="./assest/img/the cosmic atlas.png" class="w-full rounded-xl" />
-                <h3 class="text-xl font-bold pt-4 pb-1">The Cosmic Atlas</h3>
-                <p class="text-gray text-base mb-1">Elara Vance</p>
-                <div class="mt-auto flex items-center justify-between pt-1">
-                    <p class="text-navy text-base font-bold"> <span>$</span>24.99</p>
-                    <button class="bg-orange w-8 h-10.5 rounded-lg  flex items-center justify-center ">
-                        <img src="./assest/img/icons/Shopping cart.svg" />
-                    </button>
-                </div>
-            </div>
-            <div class="item">
-                <img src="./assest/img/the silent clock.png" class="w-full rounded-xl" />
-                <h3 class="text-xl font-bold pt-4 pb-1">The Silent Clock</h3>
-                <p class="text-gray text-base mb-1 ">Elara Vance</p>
-                <div class="mt-auto flex items-center justify-between pt-1">
-                    <p class="text-navy text-base font-bold"> <span>$</span>19.50</p>
-                    <button class="bg-orange w-8 h-10.5 rounded-lg  flex items-center justify-center ">
-                        <img src="./assest/img/icons/Shopping cart.svg" />
-                    </button>
-                </div>
-            </div>
-            <div class="item">
-                <img src="./assest/img/the veiled realm.png" class="w-full rounded-xl" />
-                <h3 class="text-xl font-bold pt-4 pb-1">The Veiled Realm</h3>
-                <p class="text-gray text-base mb-1">Eliza Vance</p>
-                <div class="mt-auto flex items-center justify-between pt-1">
-                    <p class="text-navy text-base font-bold"> <span>$</span>22.00</p>
-                    <button class="bg-orange w-8 h-10.5 rounded-lg  flex items-center justify-center">
-                        <img src="./assest/img/icons/Shopping cart.svg" />
-                    </button>
-                </div>
-            </div>
-            <div class="item">
-                <img src="./assest/img/find your path.png" class="w-full rounded-xl" />
-                <h3 class="text-xl font-bold pt-4 pb-1">Find Your Path Forward</h3>
-                <p class="text-gray text-base mb-1">Eliza J. Reed</p>
-                <div class="mt-auto flex items-center justify-between pt-1">
-                    <p class="text-navy text-base font-bold"> <span>$</span>28.00</p>
-                    <button class="bg-orange w-8 h-10.5 rounded-lg flex items-center justify-center">
-                        <img src="./assest/img/icons/Shopping cart.svg" />
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="bg-background container mx-auto">
-        <div class="bg-orange mb-16 mt-17 rounded-3xl flex items-center justify-between gap-12 px-20 py-20">
-            <div class="max-w-136 flex flex-col items-start text-left">
-                <span class="bg-brown/10 text-brown text-xs font-bold px-4 py-1 rounded-full mb-6 inline-block">
-                    LIMITED OFFER
-                </span>
-                <h2 class="text-brown font-playfair font-bold text-5xl mb-6">
-                    Read Anywhere, Anytime with E-Books
-                </h2>
-
-                <p class="text-brown/90 text-base mb-8">
-                    Access your entire library on any device. Get 20% off your first 3 e-book purchases this month.
-                </p>
-
-                <a href="#" class="bg-navy text-white font-bold px-10 py-4 rounded-lg inline-block">
-                    Shop E-Books
+                <a href="#" class="genres">
+                    <img src="./assest/img/icons/Fantasy.png" class="size-5" />
+                    Fantasy
+                </a>
+                <a href="#" class="genres">
+                    <img src="./assest/img/icons/Sci-Fi.png" class="size-5" />
+                    Sci-Fi
+                </a>
+                <a href="#" class="genres">
+                    <img src="./assest/img/icons/Classic.png" class="size-5" />
+                    Classic
+                </a>
+                <a href="#" class="genres">
+                    <img src="./assest/img/icons/Children's.png" class="size-5" />
+                    Children's
+                </a>
+                <a href="#" class="genres">
+                    <img src="./assest/img/icons/Romance.png" class="size-5" />
+                    Romance
+                </a>
+                <a href="#" class="genres">
+                    <img src="./assest/img/icons/Horror.png" class="size-5" />
+                    Horror
+                </a>
+                <a href="#" class="genres">
+                    <img src="./assest/img/icons/Self-Development.png" class="size-5" />
+                    Self-Development
+                </a>
+                <a href="#" class="genres">
+                    <img src="./assest/img/icons/History.png" class="size-5" />
+                    History
+                </a>
+                <a href="#" class="genres">
+                    <img src="./assest/img/icons/Religions.png" class="size-5" />
+                    Religions
                 </a>
             </div>
-
-            <div class="flex justify-center">
-                <img src="./assest/img/read.png" class="w-md h-61 rounded-xl" />
-            </div>
         </div>
-
-
     </section>
-    <section class="container mx-auto bg-off-white py-24 px-6">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-
-            <div
-                class="lg:col-span-4 bg-white border border-charcoal rounded-2xl px-10 py-10 flex flex-col justify-between h-full">
+    <section class=" bg-background px-10 pt-24 pb-12 ">
+        <div class="container items-center mx-auto">
+            <div class=" flex  w-full justify-between items-end">
                 <div>
-                    <div class="w-14 h-14 bg-navy/10 rounded-xl flex items-center justify-center mb-8">
-                        <img src="./assest/img/icons/translation.png" />
-                    </div>
-                    <h2 class="font-playfair font-bold text-[32px] mb-4">
-                        Reading Without Borders
-                    </h2>
-                    <p class="text-gray text-base mb-10">
-                        Can't find a book in your language? Our AI-assisted translation request system can help you get
-                        a professional digital translation in days.
-                    </p>
+                    <h3 class="text-dark-gray font-playfair font-bold text-[32px]">Weekly Bestsellers</h3>
+                    <p class="text-gray mt-2">The most talked-about books this week.</p>
                 </div>
-                <a href="#"
-                    class="border-2 border-navy text-navy font-bold rounded-lg text-center py-4 px-6 hover:bg-navy hover:text-white transition duration-300 block">
-                    Request Translation
+                <a href="#" class="text-navy font-bold flex items-center gap-[7.99px]">
+                    View All
+                    <img src="./assest/img/icons/arrow.svg" />
                 </a>
             </div>
-
-            <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-
-                <div class="bg-white border border-charcoal/30 rounded-2xl p-8 flex flex-col justify-between shadow-sm">
-                    <div>
-                        <div class="flex text-orange gap-1 mb-4">★★★★★</div>
-                        <p class="text-base mb-4">"Bookly has completely transformed how I find my next read. The
-                            selection is unmatched and the delivery is always pristine."</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <img src="./assest/img/icons/Background.png" />
-                        <div>
-                            <h4 class="font-bold text-sm">Sarah Jenkins</h4>
-                            <p class="text-gray text-xs">Avid Reader</p>
-                        </div>
+            <div class="items text-left grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-12">
+                <div class="item">
+                    <img src="./assest/img/the cosmic atlas.png" class="w-full rounded-xl" />
+                    <h3 class="text-xl font-bold pt-4 pb-1">The Cosmic Atlas</h3>
+                    <p class="text-gray text-base mb-1">Elara Vance</p>
+                    <div class="mt-auto flex items-center justify-between pt-1">
+                        <p class="text-navy text-base font-bold"> <span>$</span>24.99</p>
+                        <button class="bg-orange w-8 h-10.5 rounded-lg  flex items-center justify-center ">
+                            <img src="./assest/img/icons/Shopping cart.svg" />
+                        </button>
                     </div>
                 </div>
-                <div class="bg-white border border-charcoal/30 rounded-2xl p-8 flex flex-col justify-between shadow-sm">
-                    <div>
-                        <div class="flex text-orange gap-1 mb-4">★★★★★</div>
-                        <p class="text-base mb-4">"The e-book experience is seamless. I love that I can request
-                            translations for rare academic texts that aren't available locally."</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <img src="./assest/img/icons/Background.png" />
-                        <div>
-                            <h4 class="font-bold text-sm">David Chen</h4>
-                            <p class="text-gray text-xs">Graduate Student</p>
-                        </div>
+                <div class="item">
+                    <img src="./assest/img/the silent clock.png" class="w-full rounded-xl" />
+                    <h3 class="text-xl font-bold pt-4 pb-1">The Silent Clock</h3>
+                    <p class="text-gray text-base mb-1 ">Elara Vance</p>
+                    <div class="mt-auto flex items-center justify-between pt-1">
+                        <p class="text-navy text-base font-bold"> <span>$</span>19.50</p>
+                        <button class="bg-orange w-8 h-10.5 rounded-lg  flex items-center justify-center ">
+                            <img src="./assest/img/icons/Shopping cart.svg" />
+                        </button>
                     </div>
                 </div>
+                <div class="item">
+                    <img src="./assest/img/the veiled realm.png" class="w-full rounded-xl" />
+                    <h3 class="text-xl font-bold pt-4 pb-1">The Veiled Realm</h3>
+                    <p class="text-gray text-base mb-1">Eliza Vance</p>
+                    <div class="mt-auto flex items-center justify-between pt-1">
+                        <p class="text-navy text-base font-bold"> <span>$</span>22.00</p>
+                        <button class="bg-orange w-8 h-10.5 rounded-lg  flex items-center justify-center">
+                            <img src="./assest/img/icons/Shopping cart.svg" />
+                        </button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./assest/img/find your path.png" class="w-full rounded-xl" />
+                    <h3 class="text-xl font-bold pt-4 pb-1">Find Your Path Forward</h3>
+                    <p class="text-gray text-base mb-1">Eliza J. Reed</p>
+                    <div class="mt-auto flex items-center justify-between pt-1">
+                        <p class="text-navy text-base font-bold"> <span>$</span>28.00</p>
+                        <button class="bg-orange w-8 h-10.5 rounded-lg flex items-center justify-center">
+                            <img src="./assest/img/icons/Shopping cart.svg" />
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-background py-16">
+        <div class="container mx-auto">
+            <div class="bg-orange rounded-3xl flex items-center justify-between gap-12 px-20 py-20">
+                <div class="max-w-136 flex flex-col items-start text-left">
+                    <span class="bg-brown/10 text-brown text-xs font-bold px-4 py-1 rounded-full mb-6 inline-block">
+                        LIMITED OFFER
+                    </span>
+                    <h2 class="text-brown font-playfair font-bold text-5xl mb-6">
+                        Read Anywhere, Anytime with E-Books
+                    </h2>
+
+                    <p class="text-brown/90 text-base mb-8">
+                        Access your entire library on any device. Get 20% off your first 3 e-book purchases this month.
+                    </p>
+
+                    <a href="#" class="bg-navy text-white font-bold px-10 py-4 rounded-lg inline-block">
+                        Shop E-Books
+                    </a>
+                </div>
+
+                <div class="flex justify-center">
+                    <img src="./assest/img/read.png" class="w-md h-61 rounded-xl" />
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class=" bg-off-white py-24 px-6">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
 
                 <div
-                    class="bg-white border border-charcoal/30 rounded-2xl p-8 flex flex-col justify-between shadow-sm md:col-span-2">
+                    class="lg:col-span-4 bg-white border border-charcoal rounded-2xl px-10 py-10 flex flex-col justify-between h-full">
                     <div>
-                        <div class="flex text-orange gap-1 mb-4">★★★★★</div>
-                        <p class="text-base mb-4">"The literary curation here is superb. It feels like a boutique
-                            bookshop with the inventory of a global giant. My favorite place to browse."</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <img src="./assest/img/icons/Background.png" />
-                        <div>
-                            <h4 class="font-bold text-sm">Elena Rodriguez</h4>
-                            <p class="text-gray text-xs">Book Club Host</p>
+                        <div class="w-14 h-14 bg-navy/10 rounded-xl flex items-center justify-center mb-8">
+                            <img src="./assest/img/icons/translation.png" />
                         </div>
+                        <h2 class="font-playfair font-bold text-[32px] mb-4">
+                            Reading Without Borders
+                        </h2>
+                        <p class="text-gray text-base mb-10">
+                            Can't find a book in your language? Our AI-assisted translation request system can help you
+                            get
+                            a professional digital translation in days.
+                        </p>
                     </div>
+                    <a href="#"
+                        class="border-2 border-navy text-navy font-bold rounded-lg text-center py-4 px-6 hover:bg-navy hover:text-white transition duration-300 block">
+                        Request Translation
+                    </a>
                 </div>
 
+                <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                    <div
+                        class="bg-white border border-charcoal/30 rounded-2xl p-8 flex flex-col justify-between shadow-sm">
+                        <div>
+                            <div class="flex text-orange gap-1 mb-4">★★★★★</div>
+                            <p class="text-base mb-4">"Bookly has completely transformed how I find my next read. The
+                                selection is unmatched and the delivery is always pristine."</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <img src="./assest/img/icons/Background.png" />
+                            <div>
+                                <h4 class="font-bold text-sm">Sarah Jenkins</h4>
+                                <p class="text-gray text-xs">Avid Reader</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white border border-charcoal/30 rounded-2xl p-8 flex flex-col justify-between shadow-sm">
+                        <div>
+                            <div class="flex text-orange gap-1 mb-4">★★★★★</div>
+                            <p class="text-base mb-4">"The e-book experience is seamless. I love that I can request
+                                translations for rare academic texts that aren't available locally."</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <img src="./assest/img/icons/Background.png" />
+                            <div>
+                                <h4 class="font-bold text-sm">David Chen</h4>
+                                <p class="text-gray text-xs">Graduate Student</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white border border-charcoal/30 rounded-2xl p-8 flex flex-col justify-between shadow-sm md:col-span-2">
+                        <div>
+                            <div class="flex text-orange gap-1 mb-4">★★★★★</div>
+                            <p class="text-base mb-4">"The literary curation here is superb. It feels like a boutique
+                                bookshop with the inventory of a global giant. My favorite place to browse."</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <img src="./assest/img/icons/Background.png" />
+                            <div>
+                                <h4 class="font-bold text-sm">Elena Rodriguez</h4>
+                                <p class="text-gray text-xs">Book Club Host</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </section>
