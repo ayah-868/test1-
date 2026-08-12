@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>your cart</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body>
+    <header class="py-4 border border-charcoal">
+        <div class="container mx-auto flex items-center justify-between ">
+            <div class="flex items-center gap-12">
+                <div class="logo">
+                    <a href="#">
+                        <img src="./assest/img/logo.svg" />
+                    </a>
+                </div>
+
+                <nav>
+                    <ul class="flex gap-6 items-center text-xs">
+                        <li>
+                            <a href="#" class="text-gray">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray">Browse</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray">Categories</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray">Translate</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <div
+                    class="flex items-center gap-2 w-61 h-13.5 bg-off-white border border-charcoal rounded-full px-4 py-2">
+                    <img src="./assest/img/icons/search.svg" class="w-4 h-4" />
+                    <input type="text" placeholder="Search books..."
+                        class="bg-transparent outline-none text-sm w-full" />
+                </div>
+
+                <div class="icon">
+                    <ul class="flex items-center gap-4">
+                        <li>
+                            <a href="#" class="relative inline-block pb-1 border-b-2 border-navy">
+                                <img src="./assest/img/icons/cart-navy.svg" />
+                                <span
+                                    class="absolute -top-2 -right-3 bg-orange text-brown font-bold text-[10px] w-5 h-5 rounded-full flex items-center justify-center shadow-sm">
+                                    3
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./assest/img/icons/profile.svg" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <hero>
+        <section class="bg-background">
+            <div class="container mx-auto py-12">
+                <div class="mb-12">
+                    <h2 class="text-dark-gray font-bold text-[32px] font-playfair">Your Cart (3 items)</h2>
+                    <p class="text-gray text-base">Review your selections before proceeding to checkout.</p>
+                </div>
+                <div class=" grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
+                    <div class="lg:col-span-2 flex flex-col gap-6">
+
+                        <div
+                            class="grid grid-cols-12 text-xs text-gray uppercase tracking-wider pb-4 border-b border-charcoal  mb-6 ">
+                            <span class="col-span-6 font-medium">Product Details</span>
+                            <span class="col-span-2 text-center font-medium">Format</span>
+                            <span class="col-span-2 text-center font-medium">Quantity</span>
+                            <span class="col-span-2 text-right font-medium">Price</span>
+                        </div>
+
+                        <div
+                            class="bg-white p-4 rounded-xl border border-charcoal/20 grid grid-cols-12 items-center gap-4 shadow-sm ">
+                            <div class="col-span-6 flex items-center gap-4 ">
+                                <img src="./assest/img/book1.png" class=" rounded-md" />
+                                <div>
+                                    <h3 class="font-bold text-dark-gray text-xl">Echoes of Eternity</h3>
+                                    <p class="text-base text-gray">Elena Sterling</p>
+                                    <button class="text-xs text-[#BA1A1A] flex items-center gap-1 pt-2 hover:underline">
+                                        <img src="./assest/img/icons/remove.svg" />
+                                        Remove
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-span-2 text-center text-base text-gray">Hardcover</div>
+                            <div class="col-span-2 flex justify-center">
+                                <div
+                                    class="flex items-center border border-charcoal rounded-lg overflow-hidden bg-background text-base text-dark-gray">
+                                    <button class="px-2 py-1 hover:bg-gray/10">-</button>
+                                    <span class="px-4 py-1 font-medium">1</span>
+                                    <button class="px-2 py-1 hover:bg-gray/10">+</button>
+                                </div>
+                            </div>
+                            <div class="col-span-2 text-right font-bold text-navy text-xl">
+                                <span>$</span>24.99
+                            </div>
+
+                        </div>
+                        <div
+                            class="bg-white p-4 rounded-xl border border-charcoal/20 grid grid-cols-12 items-center gap-4 shadow-sm ">
+                            <div class="col-span-6 flex items-center gap-4 ">
+                                <img src="./assest/img/book2.png" class=" rounded-md" />
+                                <div>
+                                    <h3 class="font-bold text-dark-gray text-xl">The Silent Architect</h3>
+                                    <p class="text-base text-gray">Marcus Thorne</p>
+                                    <button class="text-xs text-[#BA1A1A] flex items-center gap-1 pt-2 hover:underline">
+                                        <img src="./assest/img/icons/remove.svg" />
+                                        Remove
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-span-2 text-center text-base text-gray">Paperback</div>
+                            <div class="col-span-2 flex justify-center">
+                                <div
+                                    class="flex items-center border border-charcoal rounded-lg overflow-hidden bg-background text-base text-dark-gray">
+                                    <button class="px-2 py-1 hover:bg-gray/10">-</button>
+                                    <span class="px-4 py-1 font-medium">1</span>
+                                    <button class="px-2 py-1 hover:bg-gray/10">+</button>
+                                </div>
+                            </div>
+                            <div class="col-span-2 text-right font-bold text-navy text-xl">
+                                <span>$</span>18.50
+                            </div>
+
+                        </div>
+                        <div
+                            class="bg-white p-4 rounded-xl border border-charcoal/20 grid grid-cols-12 items-center gap-4 shadow-sm ">
+                            <div class="col-span-6 flex items-center gap-4 ">
+                                <img src="./assest/img/book3.png" class=" rounded-md" />
+                                <div>
+                                    <h3 class="font-bold text-dark-gray text-xl">Atlas of the Unknown</h3>
+                                    <p class="text-base text-gray">Collector's Edition</p>
+                                    <button class="text-xs text-[#BA1A1A] flex items-center gap-1 pt-2 hover:underline">
+                                        <img src="./assest/img/icons/remove.svg" />
+                                        Remove
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-span-2 text-center text-base text-gray">Special Ed.</div>
+                            <div class="col-span-2 flex justify-center">
+                                <div
+                                    class="flex items-center border border-charcoal rounded-lg overflow-hidden bg-background text-base text-dark-gray">
+                                    <button class="px-2 py-1 hover:bg-gray/10">-</button>
+                                    <span class="px-4 py-1 font-medium">1</span>
+                                    <button class="px-2 py-1 hover:bg-gray/10">+</button>
+                                </div>
+                            </div>
+                            <div class="col-span-2 text-right font-bold text-navy text-xl">
+                                <span>$</span>45.00
+                            </div>
+
+                        </div>
+
+                        <div class="pt-4">
+                            <a href="index.html"
+                                class="text-navy font-medium text-base flex items-center gap-2 hover:underline">
+                                <img src="./assest/img/icons/back-arrow.svg" />
+                                Continue Shopping
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-6">
+                        <div
+                            class="bg-off-white p-8.25 rounded-2xl border border-charcoal shadow-sm flex flex-col gap-6 ">
+                            <h3 class="font-bold text-dark-gray font-playfair text-xl mb-6">Order Summary</h3>
+
+                            <div class="flex justify-between text-base text-gray">
+                                <span>Subtotal</span>
+                                <span class="text-dark-gray font-medium">$88.49</span>
+                            </div>
+                            <div class="flex justify-between text-base text-gray">
+                                <span>Shipping</span>
+                                <span class="text-dark-gray font-medium">Free</span>
+                            </div>
+                            <div class="flex justify-between text-base text-gray mb-6">
+                                <span>Tax</span>
+                                <span class=" text-dark-gray font-medium">$7.08</span>
+                            </div>
+
+                            <div class="flex flex-col gap-2">
+                                <label class="text-xs text-gray ">Discount Code</label>
+                                <div class="flex gap-2">
+                                    <input type="text" placeholder="Enter code"
+                                        class="flex-1 border border-charcoal bg-white rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-navy" />
+                                    <button
+                                        class="bg-navy text-white px-4 py-2 rounded-lg text-base font-medium hover:bg-navy/90 transition">Apply</button>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center border-t border-charcoal pt-6">
+                                <span class=" text-dark-gray text-base">Total</span>
+                                <span class="text-navy font-bold font-playfair text-[32px]">$95.57</span>
+                            </div>
+                            <button
+                                class="rounded-lg bg-orange text-brown py-4 text-lg font-bold hover:bg-orange/90 transition shadow-md text-center">
+                                Proceed to Checkout
+                            </button>
+                        </div>
+                        <div class="bg-[#2E2D7A] p-6 rounded-2xl flex gap-4 ">
+                            <span>
+                                <img src="./assest/img/icons/Secure-Checkout.svg" class="mt-1 w-4 h-5" />
+                            </span>
+                            <div class="text-base text-[#9998EC]">
+                                <p class="font-bold mb-1">Secure Checkout</p>
+                                <p class="text-[14px]">Your transaction is protected by 256-bit SSL encryption. We never
+                                    store your card details.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </hero>
+    <footer class="bg-navy text-white pt-12 pb-8">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-start gap-6 mb-6">
+                <div>
+                    <h3 class="font-playfair font-bold text-[32px] mb-[14.75px]">
+                        Bookly
+                    </h3>
+                    <div class="text-white/80 text-sm flex flex-col">
+                        <p>Curating the world's finest literature for a modern generation of readers.</p>
+                        <p>Elevating the digital reading experience since 2024.</p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-base mb-4 font-bold uppercase">Explore</h4>
+                    <ul class="text-base text-white/80">
+                        <li class="mb-2"><a href="#">New Arrivals</a></li>
+                        <li class="mb-2"><a href="#">Best Sellers</a></li>
+                        <li class="mb-2"><a href="#">Coming Soon</a></li>
+                        <li><a href="#">Special Editions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-base mb-4 font-bold uppercase">Account</h4>
+                    <ul class="text-base text-white/80">
+                        <li class="mb-2"><a href="#">Shipping Info</a></li>
+                        <li class="mb-2"><a href="#">Returns & Refunds</a></li>
+                        <li class="mb-2"><a href="#">Help Center</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col">
+                    <h4 class="text-base mb-4 font-bold uppercase">Newsletter</h4>
+                    <p class="text-white/70 text-sm mb-4">Get curated book recommendations and exclusive offers.</p>
+                    <div class="flex flex-col">
+                        <input type="text" placeholder="email@example.com"
+                            class="text-white/40 text-base px-4 py-2.5 mb-2 rounded-lg border border-white/20 bg-transparent" />
+                        <button
+                            class="bg-orange text-base text-brown text-center rounded-lg font-bold py-2">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 flex text-white/60 text-sm justify-between pt-8 items-center">
+                <div>
+                    <p>© 2024 Bookly. All rights reserved.</p>
+                </div>
+                <div class="flex gap-4 items-center">
+                    <a href="#">
+                        <img src="./assest/img/icons/accessibility.svg" />
+                    </a>
+                    <a href="#">
+                        <img src="./assest/img/icons/at-symbol.svg" />
+                    </a>
+                    <a href="#">
+                        <img src="./assest/img/icons/rss-feed.svg" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
