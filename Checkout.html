@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body>
+    <header class="py-4 border border-charcoal">
+        <div class="container mx-auto flex items-center justify-between ">
+            <div class="flex items-center gap-12">
+                <div class="logo">
+                    <a href="#">
+                        <img src="./assest/img/logo.svg" />
+                    </a>
+                </div>
+
+                <nav>
+                    <ul class="flex gap-6 items-center text-xs">
+                        <li>
+                            <a href="#" class="text-gray">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray">Browse</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray">Categories</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray">Translate</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <div
+                    class="flex items-center gap-2 w-61 h-13.5 bg-off-white border border-charcoal rounded-full px-4 py-2">
+                    <img src="./assest/img/icons/search.svg" class="w-4 h-4" />
+                    <input type="text" placeholder="Search books..."
+                        class="bg-transparent outline-none text-sm w-full" />
+                </div>
+
+                <div class="icon">
+                    <ul class="flex items-center gap-4">
+                        <li>
+                            <a href="#">
+                                <img src="./assest/img/icons/shopping.svg" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./assest/img/icons/profile.svg" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <hero>
+        <section class="bg-background py-12">
+            <div class="container mx-auto">
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 items-start">
+                    <div class="lg:col-span-8 bg-[white] p-8 rounded-2xl border border-charcoal shadow-sm">
+                        <h2 class="text-navy font-playfair font-bold text-[32px] mb-6">Shipping Details</h2>
+
+                        <form class="flex flex-col gap-4">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="flex flex-col">
+                                    <label class="text-xs font-medium text-gray mb-2">First Name</label>
+                                    <input type="text" placeholder="John"
+                                        class="border border-charcoal rounded-lg p-4 focus:outline-none focus:border-navy" />
+                                </div>
+                                <div class="flex flex-col">
+                                    <label class="text-xs font-medium text-gray mb-2">Last Name</label>
+                                    <input type="text" placeholder="Doe"
+                                        class="border border-charcoal rounded-lg p-4 text-base font-medium focus:outline-none focus:border-navy" />
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col">
+                                <label class="text-xs font-medium text-dark-gray mb-2">Email Address</label>
+                                <input type="email" placeholder="john.doe@example.com"
+                                    class="border border-charcoal rounded-lg p-4 text-base font-medium focus:outline-none focus:border-navy" />
+                            </div>
+
+                            <div class="flex flex-col">
+                                <label class="text-xs font-medium text-gray mb-2">Street Address</label>
+                                <input type="text" placeholder="123 Literary Ave"
+                                    class="border border-charcoal rounded-lg p-4 text-base font-medium focus:outline-none focus:border-navy" />
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                                <div class="flex flex-col">
+                                    <label class="text-xs font-medium text-gray mb-2">City</label>
+                                    <input type="text" placeholder="Booktown"
+                                        class="border border-charcoal rounded-lg px-3 py-2.5 text-base font-medium focus:outline-none focus:border-navy" />
+                                </div>
+                                <div class="flex flex-col">
+                                    <label class="text-xs font-medium text-gray mb-2">State/Province</label>
+                                    <input type="text" placeholder="NY"
+                                        class="border border-charcoal rounded-lg px-3 py-2.5 text-base font-medium focus:outline-none focus:border-navy" />
+                                </div>
+                                <div class="flex flex-col">
+                                    <label class="text-xs font-medium text-gray mb-2">ZIP / Postal Code</label>
+                                    <input type="text" placeholder="10001"
+                                        class="border border-charcoal rounded-lg px-3 py-2.5 text-base font-medium focus:outline-none focus:border-navy" />
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-3 mb-6">
+                                <input type="checkbox" id="save-info"
+                                    class="rounded-sm border-charcoal text-navy focus:ring-navy" />
+                                <label for="save-info" class="text-sm text-gray">Save this information for a faster
+                                    checkout next time</label>
+                            </div>
+
+                            <button type="submit"
+                                class="bg-navy text-white rounded-lg py-4 font-bold text-base flex items-center justify-center gap-2">
+                                <span>Continue to Payment</span>
+                                <span><img src="./assest/img/icons/arrow2.svg"/>
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="lg:col-span-4 rounded-2xl border border-charcoal shadow-sm flex flex-col gap-6">
+                         <div class="bg-navy/10 text-navy font-playfair text-xl p-6" >
+                    <h3 class="font-bold ">Order Summary</h3>
+</div>
+
+
+                </div>
+            </div>
+
+        </section>
+    </hero>
+    <footer class="bg-navy text-white pt-12 pb-8">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-start gap-6 mb-6">
+                <div>
+                    <h3 class="font-playfair font-bold text-[32px] mb-4">
+                        Bookly
+                    </h3>
+
+                    <p class="text-white/80 text-sm mb-4">Cultivating the love of reading through a
+                        modern, curated marketplace for physical
+                        and digital literature.</p>
+                    <div class="flex gap-4 mb-2">
+                        <a href="#"
+                            class="border border-white/30 rounded-full flex items-center justify-center w-10 h-10">
+                            <img src="./assest/img/icons/share2.svg" />
+                        </a>
+                        <a href="#"
+                            class="border border-white/30 rounded-full flex items-center justify-center w-10 h-10">
+                            <img src="./assest/img/icons/earth2.svg" />
+                        </a>
+                    </div>
+
+                </div>
+                <div>
+                    <h4 class="text-base mb-4 font-bold uppercase">Explore</h4>
+                    <ul class="text-base text-white/80">
+                        <li class="mb-2"><a href="#">Bestsellers</a></li>
+                        <li class="mb-2"><a href="#">New Releases</a></li>
+                        <li class="mb-2"><a href="#">Digital Editions</a></li>
+                        <li><a href="#">Audiobooks</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-base mb-4 font-bold uppercase">Account</h4>
+                    <ul class="text-base text-white/80">
+                        <li class="mb-2"><a href="#">Shipping Policy</a></li>
+                        <li class="mb-2"><a href="#">Returns & Refunds</a></li>
+                        <li class="mb-2"><a href="#">Order Tracking</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col">
+                    <h4 class="text-base mb-4 font-bold uppercase">Newsletter</h4>
+                    <p class="text-white/70 text-xs mb-4"> Join our reading circle for weekly curated
+                        recommendations.
+                    </p>
+
+                    <input type="text" placeholder="email@example.com"
+                        class="bg-navy/50 border border-white/20 text-base text-white/40 p-3 rounded-lg mb-4" />
+                    <p class="text-white/60 text-sm">© 2024 Bookly. All rights reserved.</p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
