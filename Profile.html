@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body>
+    <header class="py-4 border border-charcoal">
+        <div class="container mx-auto flex items-center justify-between ">
+            <div class="flex items-center gap-12">
+                <div class="logo">
+                    <a href="#">
+                        <img src="./assest/img/logo.svg" />
+                    </a>
+                </div>
+
+                <nav>
+                    <ul class="flex gap-6 items-center text-xs">
+                        <li>
+                            <a href="#" class="text-gray">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray">Browse</a>
+                        </li>
+                        <li>
+                            <a href="#" class="" text-gray>Categories</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray">Translate</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <div class="flex items-center justify-between bg-off-white rounded-full px-4 py-2">
+                    <input type="text" placeholder="Search titles, authors..."
+                        class=" outline-none text-sm w-full text-gray" />
+                    <img src="./assest/img/icons/search.svg" class="w-4 h-4" />
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <a href="#" class=" hover:bg-gray/10 rounded-full transition">
+                        <img src="./assest/img/icons/shopping.svg" class="w-7 h-7" />
+                    </a>
+                    <a href="#"
+                        class="flex items-center gap-2 bg-off-white border border-charcoal rounded-full py-1.5 px-3 hover:bg-gray/10 transition">
+                        <img src="./assest/img/icons/profile.svg" class="w-6 h-6 rounded-full object-cover" />
+                        <span class="text-navy font-bold text-xs">Profile</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <hero>
+        <section class="bg-background pt-12 pb-27.5">
+            <div class="container mx-auto">
+
+                <div
+                    class="bg-white rounded-xl border border-[#C7C5D24D]/30 shadow-sm pt-9 sm:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-2 mb-8">
+
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center gap-8">
+
+                        <div class="relative">
+                            <img src="./assest/img/profile-avatar.png"
+                                class="w-38 h-38 sm:w-28 sm:h-28 rounded-full object-cover" />
+                            <button
+                                class="absolute bottom-1 right-1 w-7 h-7 bg-navy text-white rounded-full flex items-center justify-center shadow-md hover:bg-navy/90 transition">
+                                <img src="./assest/img/icons/pen.svg" class="w-2.5 h-2.5 object-contain" />
+                            </button>
+                        </div>
+
+                        <div class="flex flex-col gap-2">
+                            <h1 class="text-navy font-playfair font-bold text-[32px] sm:text-4xl">Julian Thorne</h1>
+                            <p class="text-gray text-base">julian.thorne@literary.com</p>
+
+                            <div class="flex items-center gap-3">
+                                <span class="bg-[#FFDDB8] text-brown text-xs px-3 py-1 rounded-full">Gold Member</span>
+                                <span class="bg-purple text-[#3E3D8A] text-xs px-3 py-1 rounded-full">Member since
+                                    2021</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <button
+                            class="bg-navy text-white rounded-lg py-3 px-8 font-medium text-xs hover:bg-navy/90 transition flex items-center gap-2 shadow-sm">
+                            <img src="./assest/img/icons/Edit-Profile.svg" class="w-4 h-4 object-contain" />
+                            <span>Edit Profile</span>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="border-b border-charcoal mb-8">
+                    <ul class="flex flex-wrap gap-8 text-xs sm:text-sm font-medium">
+                        <li>
+                            <a href="#" class="text-navy pb-[17.5px] mb-1 border-b-2 border-navy block">MY ORDERS</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray hover:text-navy pb-[17.5px] mb-1 block transition">MY
+                                REVIEWS</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray hover:text-navy pb-[17.5px] mb-1 block transition">WISHLIST</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray hover:text-navy pb-[17.5px] mb-1 block transition">MY
+                                E-BOOKS</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray hover:text-navy pb-[17.5px] mb-1 block transition">ACCOUNT
+                                SETTINGS</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-xl border border-[#C7C5D280]/30 shadow-sm overflow-hidden">
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left border-collapse">
+
+                            <thead>
+                                <tr class="bg-off-white border-b border-[#C7C5D280]/50 text-xs text-gray uppercase">
+                                    <th class="py-6 pl-6">Order ID</th>
+                                    <th class="py-6 pl-6">Date</th>
+                                    <th class="py-6 pl-6">Total</th>
+                                    <th class="py-6 pl-6">Status</th>
+                                    <th class="py-6 pr-6 text-right">Action</th>
+                                </tr>
+                            </thead>
+
+                            <tbody class="divide-y divide-charcoal/20">
+
+                                <tr class="hover:bg-off-white/50 transition">
+                                    <td class="text-xl p-6 font-bold text-navy">#BK-99210</td>
+                                    <td class="p-6 text-gray text-base">Oct 14, 2023</td>
+                                    <td class="p-6 text-base text-dark-gray font-medium">$42.50</td>
+                                    <td class="p-6">
+                                        <span
+                                            class="bg-[#DCFCE7] text-[#166534] text-xs px-3 py-1 rounded-full">Shipped</span>
+                                    </td>
+                                    <td class="p-6 text-right">
+                                        <a href="#" class="text-navy font-bold text-xs hover:underline">View Details</a>
+                                    </td>
+                                </tr>
+
+                                <tr class="hover:bg-off-white/50 transition">
+                                    <td class="text-xl p-6 font-bold text-navy">#BK-98105</td>
+                                    <td class="p-6 text-gray text-base">Sep 28, 2023</td>
+                                    <td class="p-6 text-base text-dark-gray font-medium">$19.99</td>
+                                    <td class="p-6">
+                                        <span
+                                            class="bg-[#FEA61933] text-brown text-xs px-3 py-1 rounded-full">Processing</span>
+                                    </td>
+                                    <td class="p-6 text-right">
+                                        <a href="#" class="text-navy font-bold text-xs hover:underline">View Details</a>
+                                    </td>
+                                </tr>
+
+                                <tr class="hover:bg-off-white/50 transition">
+                                    <td class="text-xl p-6 font-bold text-navy">#BK-97552</td>
+                                    <td class="p-6 text-gray text-base">Aug 12, 2023</td>
+                                    <td class="p-6 text-base text-dark-gray font-medium">$114.20</td>
+                                    <td class="p-6">
+                                        <span
+                                            class="bg-[#C7C5D24D] text-gray text-xs px-3 py-1 rounded-full">Delivered</span>
+                                    </td>
+                                    <td class="p-6 text-right">
+                                        <a href="#" class="text-navy font-bold text-xs hover:underline">View Details</a>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </hero>
+    <footer class="bg-navy text-white pt-16 pb-8">
+        <div class="container mx-auto">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+
+                <div>
+                    <h3 class="font-playfair font-bold text-[32px] mb-4">
+                        Bookly
+                    </h3>
+                    <p class="text-white/70 text-xs sm:text-sm leading-relaxed">
+                        Curation of the world's finest literature, delivered digitally to your doorstep since 2024.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-bold mb-6">Explore</h4>
+                    <ul class="text-sm text-white/70">
+                        <li class="mb-3"><a href="#" class="hover:text-white transition">Best Sellers</a></li>
+                        <li class="mb-3"><a href="#" class="hover:text-white transition">New Arrivals</a></li>
+                        <li class="mb-3"><a href="#" class="hover:text-white transition">Genres</a></li>
+                        <li><a href="#" class="hover:text-white transition">Member Benefits</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-bold mb-6">Account</h4>
+                    <ul class="text-sm text-white/70">
+                        <li class="mb-3"><a href="#" class="hover:text-white transition">My Profile</a></li>
+                        <li class="mb-3"><a href="#" class="hover:text-white transition">Order History</a></li>
+                        <li class="mb-3"><a href="#" class="hover:text-white transition">Reading List</a></li>
+                        <li><a href="#" class="hover:text-white transition">Gift Cards</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-bold mb-6">Services</h4>
+                    <ul class="text-sm text-white/70">
+                        <li class="mb-3"><a href="#" class="hover:text-white transition">Shipping Info</a></li>
+                        <li class="mb-3"><a href="#" class="hover:text-white transition">Return Policy</a></li>
+                        <li class="mb-3"><a href="#" class="hover:text-white transition">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-white transition">FAQs</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div
+                class="border-t border-white/20 flex flex-col sm:flex-row items-center justify-between text-white/60 text-xs pt-8">
+                <div>
+                    <p>© 2024 Bookly. All rights reserved.</p>
+                </div>
+
+                <div class="flex items-center gap-6">
+                    <a href="#" class="hover:opacity-80 transition">
+                        <img src="./assest/img/icons/globe2.svg" class="w-4 h-4 object-contain" />
+                    </a>
+                    <a href="#" class="hover:opacity-80 transition">
+                        <img src="./assest/img/icons/share3.svg" class="w-4 h-4 object-contain" />
+                    </a>
+                    <a href="#" class="hover:opacity-80 transition">
+                        <img src="./assest/img/icons/help.svg" class="w-4 h-4 object-contain" />
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
