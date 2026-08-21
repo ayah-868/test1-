@@ -10,17 +10,17 @@
 </head>
 
 <body>
-    <header class="py-4 border border-charcoal">
-        <div class="container mx-auto flex items-center justify-between ">
-            <div class="flex items-center gap-12">
+    <header class="py-4 border border-charcoal bg-background">
+        <div class="container mx-auto flex items-center justify-between px-4">
+            <div class="flex items-center gap-6 lg:gap-12">
                 <div class="logo">
                     <a href="#">
                         <img src="./assest/img/logo.svg" />
                     </a>
                 </div>
 
-                <nav>
-                    <ul class="flex gap-6 items-center text-xs">
+                <nav class="hidden md:block">
+                    <ul class="flex gap-4 lg:gap-6 items-center text-xs">
                         <li>
                             <a href="#" class="text-gray">Home</a>
                         </li>
@@ -28,7 +28,7 @@
                             <a href="#" class="text-gray">Browse</a>
                         </li>
                         <li>
-                            <a href="#" class="" text-gray>Categories</a>
+                            <a href="#" class="text-gray">Categories</a>
                         </li>
                         <li>
                             <a href="#" class="text-gray">Translate</a>
@@ -42,14 +42,14 @@
 
             <div class="flex items-center gap-4">
                 <div
-                    class="flex items-center gap-2 w-61 h-13.5 bg-off-white border border-charcoal rounded-full px-4 py-2">
+                    class="hidden sm:flex items-center gap-2 w-40 md:w-52 lg:w-61 h-10 lg:h-13.5 bg-off-white border border-charcoal rounded-full px-3 lg:px-4 py-2">
                     <img src="./assest/img/icons/search.svg" class="w-4 h-4" />
                     <input type="text" placeholder="Search books..."
-                        class="bg-transparent outline-none text-sm w-full" />
+                        class="bg-transparent outline-none text-xs lg:text-sm w-full" />
                 </div>
 
                 <div class="icon">
-                    <ul class="flex items-center gap-4">
+                    <ul class="flex items-center gap-3 lg:gap-4">
                         <li>
                             <a href="#">
                                 <img src="./assest/img/icons/shopping.svg" />
@@ -65,9 +65,9 @@
             </div>
         </div>
     </header>
-    <hero>
+    <main>
         <section class="bg-background pt-16">
-            <div class="container mx-auto">
+            <div class="container mx-auto px-4">
 
                 <div class="mb-12">
                     <h1 class="text-dark-gray font-playfair font-bold text-3xl sm:text-4xl lg:text-5xl mb-4">
@@ -186,13 +186,76 @@
                     </div>
 
                 </div>
-                <div class="rounded-xl overflow-hidden border border-charcoal shadow-sm bg-white/0.2 sm:p-4 relative">
+                <div
+                    class="rounded-xl overflow-hidden border border-charcoal shadow-sm bg-white/0.2 sm:p-4 relative mb-20">
                     <img src="./assest/img/map.png" class="w-full h-112.5 sm:h-125 object-cover rounded-xl">
                 </div>
             </div>
         </section>
-    </hero>
+    </main>
+    <footer class="bg-navy text-white pt-16 pb-8 w-full">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <h3 class="font-playfair font-bold text-[32px] mb-4">
+                        Bookly
+                    </h3>
+                    <p class="text-white/70 text-xs sm:text-sm leading-relaxed">
+                        Connecting readers with timeless stories and contemporary masterpieces through a modern literary
+                        marketplace.
+                    </p>
+                </div>
 
+                <div>
+                    <h4 class="text-base font-bold mb-4">Quick Links</h4>
+                    <ul class="text-xs text-white/70">
+                        <li class="mb-2"><a href="#" class="hover:text-white transition">Explore</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-white transition underline">Account</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-white transition">Services</a></li>
+                        <li><a href="#" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-base font-bold mb-4">Customer Care</h4>
+                    <ul class="text-xs text-white/70">
+                        <li class="mb-2"><a href="#" class="hover:text-white transition">FAQ</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-white transition">Shipping Policy</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-base font-bold mb-4">Newsletter</h4>
+                    <p class="text-xs text-white/70 mb-4">
+                        Subscribe for curated book lists and exclusive offers.
+                    </p>
+                    <form class="flex items-center">
+                        <input type="email" placeholder="Email address"
+                            class="bg-white/10 border border-white/20 text-white/50 text-base px-4 py-3 rounded-[0.8px] outline-none w-full focus:border-white">
+                        <button type="submit"
+                            class="bg-orange hover:bg-orange/90 p-4 rounded-lg flex items-center justify-center transition">
+                            <img src="./assest/img/icons/arrow.svg" />
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div
+                class="border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-white/60 text-xs pt-8 gap-4">
+                <div>
+                    <p>© 2024 Bookly. All rights reserved.</p>
+                </div>
+
+                <div class="flex items-center gap-6">
+                    <a href="#" class="hover:text-white transition">Privacy</a>
+                    <a href="#" class="hover:text-white transition">Terms</a>
+                    <a href="#" class="hover:text-white transition">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

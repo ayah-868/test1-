@@ -13,16 +13,16 @@
 </head>
 
 <body>
-    <header class="py-4 border border-charcoal">
-        <div class="container mx-auto flex items-center justify-between ">
-            <div class="flex items-center gap-12">
+    <header class="py-4 border border-charcoal bg-background">
+        <div class="container mx-auto px-4 flex items-center justify-between">
+            <div class="flex items-center gap-6 lg:gap-12">
                 <div class="logo">
                     <a href="#">
                         <img src="./assest/img/logo.svg" />
                     </a>
                 </div>
 
-                <nav>
+                <nav class="hidden lg:block">
                     <ul class="flex gap-6 items-center text-xs">
                         <li>
                             <a href="#" class="font-bold text-navy border-b-2 border-navy pb-1">Home</a>
@@ -43,16 +43,16 @@
                 </nav>
             </div>
 
-            <div class="flex items-center gap-4">
+            <div class="flex items-center gap-3 lg:gap-4">
                 <div
-                    class="flex items-center gap-2 w-61 h-13.5 bg-off-white border border-charcoal rounded-full px-4 py-2">
-                    <img src="./assest/img/icons/search.svg" class="w-4 h-4" />
+                    class="flex items-center gap-2 w-36 sm:w-48 lg:w-61 h-13.5 bg-off-white border border-charcoal rounded-full px-4 py-2">
+                    <img src="./assest/img/icons/search.svg" class="w-4 h-4 shrink-0" />
                     <input type="text" placeholder="Search books..."
-                        class="bg-transparent outline-none text-sm w-full" />
+                        class="bg-transparent outline-none text-xs sm:text-sm w-full" />
                 </div>
 
                 <div class="icon">
-                    <ul class="flex items-center gap-4">
+                    <ul class="flex items-center gap-3 lg:gap-4">
                         <li>
                             <a href="#">
                                 <img src="./assest/img/icons/shopping.svg" />
@@ -69,34 +69,39 @@
         </div>
     </header>
     <hero>
-        <section class="bg-background border border-charcoal  pt-24  pb-32 gap-6 px-10">
-            <div class="container mx-auto flex items-center justify-between">
-                <div>
-                    <h2 class="text-[48px] font-playfair font-bold">Your Next Favorite Book is</h2>
-                    <h2 class="text-navy text-[48px] font-playfair font-bold">One Click Away</h2>
-                    <p class="text-[16px] text-gray w-100 mb-6">Explore our curated collection of literary masterpieces,
+        <section class="bg-background border border-charcoal pt-16 md:pt-24 pb-20 md:pb-32 px-4 md:px-10">
+            <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-6">
+                <div class="w-full lg:w-auto">
+                    <h2 class="text-3xl sm:text-4xl md:text-[48px] font-playfair font-bold">Your Next Favorite Book is
+                    </h2>
+                    <h2 class="text-navy text-3xl sm:text-4xl md:text-[48px] font-playfair font-bold">One Click Away
+                    </h2>
+                    <p class="text-sm sm:text-base text-gray w-full sm:w-100 mb-6">Explore our curated collection of
+                        literary masterpieces,
                         contemporary bestsellers, and digital treasures. From physical
                         copies to instant e-books, your journey starts here.</p>
-                    <div class="flex items-center  gap-4">
-                        <a href="#" class="bg-navy text-white rounded-lg px-8 py-4.5 flex items-center gap-2 ">
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+                        <a href="#"
+                            class="bg-navy text-white rounded-lg px-8 py-4.5 flex items-center justify-center gap-2">
                             Browse Books
                             <img src="./assest/img/icons/browse.svg" />
                         </a>
                         <a href="#"
-                            class=" border-2 rounded-lg border-orange text-orange flex items-center gap-2 py-4 px-8">
+                            class="border-2 rounded-lg border-orange text-orange flex items-center justify-center gap-2 py-4 px-8">
                             Get an E-Book
                             <img src="./assest/img/icons/phone.svg" />
                         </a>
                     </div>
                 </div>
-                <div>
-                    <img src="./assest/img/books.png" class="w-125 h-125" />
+                <div class="w-full lg:w-auto flex justify-center">
+                    <img src="./assest/img/books.png"
+                        class="w-full max-w-sm sm:max-w-md lg:w-125 lg:h-125 h-auto object-contain" />
                 </div>
             </div>
         </section>
     </hero>
     <section class=" px-10 py-12 bg-white border border-charcoal">
-        <div class="container mx-auto">
+        <div class="container mx-auto px-4">
             <div class=" flex items-center gap-4 overflow-x-auto whitespace-nowrap py-2 scrollbar-none">
 
                 <a href="#" class="genres">
@@ -139,7 +144,7 @@
         </div>
     </section>
     <section class=" bg-background px-10 pt-24 pb-12 ">
-        <div class="container items-center mx-auto">
+        <div class="container items-center mx-auto px-4">
             <div class=" flex  w-full justify-between items-end">
                 <div>
                     <h3 class="text-dark-gray font-playfair font-bold text-[32px]">Weekly Bestsellers</h3>
@@ -199,34 +204,36 @@
         </div>
     </section>
     <section class="bg-background py-16">
-        <div class="container mx-auto">
-            <div class="bg-orange rounded-3xl flex items-center justify-between gap-12 px-20 py-20">
-                <div class="max-w-136 flex flex-col items-start text-left">
+        <div class="container mx-auto px-4">
+            <div
+                class="bg-orange rounded-3xl flex flex-col lg:flex-row items-center justify-between gap-12 px-6 sm:px-12 lg:px-20 py-12 lg:py-20 text-center lg:text-left">
+                <div class="max-w-136 flex flex-col items-center lg:items-start">
                     <span class="bg-brown/10 text-brown text-xs font-bold px-4 py-1 rounded-full mb-6 inline-block">
                         LIMITED OFFER
                     </span>
-                    <h2 class="text-brown font-playfair font-bold text-5xl mb-6">
+                    <h2 class="text-brown font-playfair font-bold text-3xl sm:text-4xl lg:text-5xl mb-6">
                         Read Anywhere, Anytime with E-Books
                     </h2>
 
-                    <p class="text-brown/90 text-base mb-8">
+                    <p class="text-brown/90 text-sm sm:text-base mb-8">
                         Access your entire library on any device. Get 20% off your first 3 e-book purchases this month.
                     </p>
 
-                    <a href="#" class="bg-navy text-white font-bold px-10 py-4 rounded-lg inline-block">
+                    <a href="#" class="bg-navy text-white font-bold px-8 sm:px-10 py-4 rounded-lg inline-block">
                         Shop E-Books
                     </a>
                 </div>
 
-                <div class="flex justify-center">
-                    <img src="./assest/img/read.png" class="w-md h-61 rounded-xl" />
+                <div class="flex justify-center w-full lg:w-auto">
+                    <img src="./assest/img/read.png"
+                        class="w-full max-w-xs sm:max-w-sm lg:w-md h-auto rounded-xl object-cover" />
                 </div>
             </div>
 
         </div>
     </section>
     <section class=" bg-off-white py-24 px-6">
-        <div class="container mx-auto">
+        <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
 
                 <div
@@ -304,30 +311,33 @@
         </div>
     </section>
     <section class="bg-navy text-white py-24 flex flex-col items-center">
-        <div class="container mx-auto text-center">
-            <h2 class="font-playfair font-bold text-5xl mb-6 mx-auto">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="font-playfair font-bold text-3xl sm:text-4xl md:text-5xl mb-6 mx-auto">
                 Stay in the Loop
             </h2>
-            <p class="text-base text-white/80 mx-auto max-w-2xl mb-6">Subscribe to our newsletter for exclusive author
+            <p class="text-sm sm:text-base text-white/80 mx-auto max-w-2xl mb-8 px-4">Subscribe to our newsletter for
+                exclusive author
                 interviews, early
                 access to sales, and
                 weekly curated reading lists.</p>
         </div>
-        <div class="flex gap-4 mb-6 ">
+
+        <div class="flex flex-col sm:flex-row gap-4 mb-6 w-full max-w-lg px-4 justify-center items-center">
             <input type="email" placeholder="Enter your email address"
-                class="bg-white text-gray-800 pt-4.5 pb-4.75 pl-6 w-[352.55px] rounded-lg outline-none grow text-base" />
-            <button class="bg-orange text-brown font-bold px-8 py-4 rounded-lg ">
+                class="bg-white text-gray-800 pt-4 pb-4 pl-6 w-full sm:w-[352.55px] rounded-lg outline-none text-base" />
+            <button class="bg-orange text-brown font-bold px-8 py-4 rounded-lg w-full sm:w-auto shrink-0">
                 Subscribe
             </button>
         </div>
-        <p class="text-xs text-white/60">
+
+        <p class="text-xs text-white/60 text-center px-4">
             By subscribing, you agree to our Privacy Policy and Terms of Service.
         </p>
     </section>
-    <footer class="bg-navy text-white pt-10.5 pb-8 ">
-        <div class="container mx-auto ">
-            <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-start gap-6 mb-12">
-                <div class="mb-12">
+    <footer class="bg-navy text-white pt-10.5 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-start gap-6 mb-12">
+                <div class="mb-12 md:mb-0">
                     <h3 class="font-playfair font-bold text-[32px] mb-6">
                         Bookly
                     </h3>
@@ -422,11 +432,12 @@
                 </div>
             </div>
         </div>
-        <div class="border-t border-white/10 flex text-white/60 text-sm justify-between pt-8">
+        <div
+            class="container mx-auto px-4 border-t border-white/10 flex flex-col md:flex-row text-white/60 text-sm justify-between items-center gap-4 pt-8">
             <div>
                 <p>© 2024 Bookly. All rights reserved.</p>
             </div>
-            <div class=" flex gap-6">
+            <div class="flex flex-wrap justify-center gap-6">
                 <a href="#">Privacy Policy</a>
                 <a href="#">Terms of Service</a>
                 <a href="#">Cookie Policy</a>

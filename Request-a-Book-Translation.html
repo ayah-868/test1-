@@ -10,46 +10,48 @@
 </head>
 
 <body>
-    <header class="py-4 border border-charcoal">
-        <div class="container mx-auto flex items-center justify-between ">
-            <div class="flex items-center gap-12">
+    <header class="py-4 border border-charcoal bg-background">
+        <div class="container mx-auto flex items-center justify-between px-4">
+
+            <div class="flex items-center gap-6 lg:gap-12">
                 <div class="logo">
                     <a href="#">
                         <img src="./assest/img/logo.svg" />
                     </a>
                 </div>
 
-                <nav>
-                    <ul class="flex gap-6 items-center text-xs">
+                <nav class="hidden md:block">
+                    <ul class="flex gap-4 lg:gap-6 items-center text-xs">
                         <li>
-                            <a href="#" class="text-gray">Home</a>
+                            <a href="#" class="text-gray hover:text-navy transition">Home</a>
                         </li>
                         <li>
-                            <a href="#" class="text-gray">Browse</a>
+                            <a href="#" class="text-gray hover:text-navy transition">Browse</a>
                         </li>
                         <li>
-                            <a href="#" class="" text-gray>Categories</a>
+                            <a href="#" class="text-gray hover:text-navy transition">Categories</a>
                         </li>
                         <li>
                             <a href="#" class="font-bold text-navy border-b-2 border-navy pb-1">Translate</a>
                         </li>
                         <li>
-                            <a href="#" class="text-gray">Contact</a>
+                            <a href="#" class="text-gray hover:text-navy transition">Contact</a>
                         </li>
                     </ul>
                 </nav>
             </div>
 
-            <div class="flex items-center gap-4">
+            <div class="flex items-center gap-3 lg:gap-4">
+
                 <div
-                    class="flex items-center gap-2 w-61 h-13.5 bg-off-white border border-charcoal rounded-full px-4 py-2">
+                    class="hidden sm:flex items-center gap-2 w-40 lg:w-61 h-10 lg:h-13.5 bg-off-white border border-charcoal rounded-full px-3 lg:px-4 py-2">
                     <img src="./assest/img/icons/search.svg" class="w-4 h-4" />
                     <input type="text" placeholder="Search books..."
-                        class="bg-transparent outline-none text-sm w-full" />
+                        class="bg-transparent outline-none text-xs lg:text-sm w-full" />
                 </div>
 
                 <div class="icon">
-                    <ul class="flex items-center gap-4">
+                    <ul class="flex items-center gap-3 lg:gap-4">
                         <li>
                             <a href="#">
                                 <img src="./assest/img/icons/shopping.svg" />
@@ -65,9 +67,9 @@
             </div>
         </div>
     </header>
-    <hero>
+    <main>
         <section class="bg-background py-16">
-            <section class="container mx-auto">
+            <section class="container mx-auto px-4">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
                     <div class="lg:col-span-6 flex flex-col">
                         <h1 class="text-navy font-playfair font-bold text-[48px] sm:text-4xl lg:text-5xl mb-4">
@@ -196,9 +198,9 @@
                 </div>
                 </div>
             </section>
-    </hero>
+    </main>
     <section class="bg-background py-20">
-        <div class="container mx-auto">
+        <div class="container mx-auto px-4">
 
             <h2 class="text-navy font-playfair font-bold text-[32px] text-center mb-12">Translation Journey</h2>
 
@@ -251,6 +253,75 @@
         </div>
 
     </section>
+    <footer class="bg-navy text-white pt-12 pb-8 w-full">
+        <div class="container mx-auto px-4">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-9">
+
+                <div class="flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-playfair font-bold text-[32px] mb-4">
+                            Bookly
+                        </h3>
+                        <p class="text-white/70 text-xs sm:text-sm mb-6">
+                            Elevating the global reading experience through technology and literary craft.
+                        </p>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <a href="#" class="hover:opacity-80 transition">
+                            <img src="./assest/img/icons/share2.svg" class="w-4 h-4 object-contain" />
+                        </a>
+                        <a href="#" class="hover:opacity-80 transition">
+                            <img src="./assest/img/icons/globe.svg" class="w-4 h-4 object-contain" />
+                        </a>
+                        <a href="#" class="hover:opacity-80 transition">
+                            <img src="./assest/img/icons/email2.svg" class="w-4 h-4 object-contain" />
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-base font-bold mb-4">Explore</h4>
+                    <ul class="text-xs text-white/70">
+                        <li class="mb-2"><a href="#" class="hover:text-white transition">Best Sellers</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-white transition">New Releases</a></li>
+                        <li><a href="#" class="hover:text-white transition">Genres</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-base font-bold mb-4">Account</h4>
+                    <ul class="text-xs text-white/70">
+                        <li class="mb-2"><a href="#" class="hover:text-white transition">My Library</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-white transition">Subscriptions</a></li>
+                        <li><a href="#" class="hover:text-white transition">Settings</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-base font-bold mb-4">Services</h4>
+                    <ul class="text-xs text-white/70">
+                        <li class="mb-2"><a href="#" class="hover:text-white transition underline">Translation</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-white transition">Publishing</a></li>
+                        <li><a href="#" class="hover:text-white transition">Support</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div
+                class="border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-white/60 text-xs sm:text-sm pt-8 gap-4">
+                <div>
+                    <p>© 2024 Bookly. All rights reserved.</p>
+                </div>
+                <div class="flex items-center gap-6">
+                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 

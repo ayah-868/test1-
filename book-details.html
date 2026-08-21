@@ -9,16 +9,16 @@
 </head>
 
 <body>
-    <header class="py-4 border border-charcoal">
-        <div class="container mx-auto flex items-center justify-between ">
-            <div class="flex items-center gap-12">
+    <header class="py-4 border border-charcoal bg-background">
+        <div class="container mx-auto px-4 flex items-center justify-between">
+            <div class="flex items-center gap-6 lg:gap-12">
                 <div class="logo">
                     <a href="#">
                         <img src="./assest/img/logo.svg" />
                     </a>
                 </div>
 
-                <nav>
+                <nav class="hidden lg:block">
                     <ul class="flex gap-6 items-center text-xs">
                         <li>
                             <a href="#" class="text-gray">Home</a>
@@ -39,16 +39,16 @@
                 </nav>
             </div>
 
-            <div class="flex items-center gap-4">
+            <div class="flex items-center gap-3 lg:gap-4">
                 <div
-                    class="flex items-center gap-2 w-61 h-13.5 bg-off-white border border-charcoal rounded-full px-4 py-2">
-                    <img src="./assest/img/icons/search.svg" class="w-4 h-4" />
+                    class="flex items-center gap-2 w-36 sm:w-48 lg:w-61 h-13.5 bg-off-white border border-charcoal rounded-full px-4 py-2">
+                    <img src="./assest/img/icons/search.svg" class="w-4 h-4 shrink-0" />
                     <input type="text" placeholder="Search books..."
-                        class="bg-transparent outline-none text-sm w-full" />
+                        class="bg-transparent outline-none text-xs sm:text-sm w-full" />
                 </div>
 
                 <div class="icon">
-                    <ul class="flex items-center gap-4">
+                    <ul class="flex items-center gap-3 lg:gap-4">
                         <li>
                             <a href="#">
                                 <img src="./assest/img/icons/shopping.svg" />
@@ -66,7 +66,7 @@
     </header>
     <hero>
         <section class=" bg-background  border border-charcoal">
-            <div class="container  mx-auto">
+            <div class="container mx-auto px-4">
                 <div class=" flex text-start text-gray text-xs mb-8 pt-12 gap-2">
                     <a href="index.html" class="gap-1">
                         Home <span>></span>
@@ -82,7 +82,7 @@
                             class="absolute top-4 left-4 z-10 bg-orange text-[#2A1700] text-base font-bold px-3 py-1 rounded-full shadow-md">
                             Best Seller
                         </span>
-                        <img src="./assest/img/The Alchemist of Shadows.png" class=" block rounded-lg" />
+                        <img src="./assest/img/The Alchemist of Shadows.png" class=" block rounded-lg w-full" />
                     </div>
                     <div>
                         <span
@@ -110,7 +110,7 @@
                         </div>
 
                         <div class=" mb-6 flex flex-col gap-4">
-                            <div class="flex items-center gap-4">
+                            <div class="flex flex-wrap items-center gap-4">
                                 <div class="flex items-center border border-charcoal rounded-lg overflow-hidden py-2">
                                     <button class="px-4 text-dark-gray hover:bg-gray/10 transition">-</button>
                                     <span class="px-4 font-medium text-dark-gray">1</span>
@@ -118,22 +118,23 @@
                                 </div>
 
                                 <button
-                                    class="bg-navy text-white text-base flex items-center gap-2 px-[88.25px] py-3 rounded-lg">
+                                    class="bg-navy text-white text-base flex items-center justify-center gap-2 flex-1 sm:flex-none sm:px-16 py-3 rounded-lg">
                                     <img src="./assest/img/icons/shope.svg" />
                                     <span>Add to Cart</span>
                                 </button>
                             </div>
                             <div class="flex items-center gap-4">
                                 <button
-                                    class=" bg-orange rounded-lg text-[#2A1700] py-4 px-[153.31px] text-base font-bold">Buy
+                                    class="bg-orange rounded-lg text-[#2A1700] py-4 flex-1 text-base font-bold text-center">Buy
                                     Now</button>
                                 <button
-                                    class="border border-charcoal rounded-lg p-3.5 flex items-center justify-center">
+                                    class="border border-charcoal rounded-lg p-3.5 flex items-center justify-center shrink-0">
                                     <img src="./assest/img/icons/heart.svg" />
                                 </button>
                             </div>
                         </div>
-                        <div class="border-t border-charcoal pt-6 flex items-center gap-8 text-xs text-gray">
+                        <div
+                            class="border-t border-charcoal pt-6 flex flex-wrap items-center gap-4 lg:gap-8 text-xs text-gray">
                             <div class="flex items-center gap-2">
                                 <img src="./assest/img/icons/delivery.svg" />
                                 <span>Free Delivery over $50</span>
@@ -147,12 +148,12 @@
                     </div>
                 </div>
                 <div class="mb-8">
-                    <div class="gap-8 flex items-start text-base border-b border-charcoal pt-8 mb-8">
-                        <button class="text-navy font-medium border-b-2 border-navy pb-4">DESCRIPTION</button>
-                        <button class="text-gray pb-4">PRODUCT DETAILS</button>
-                        <button class="text-gray pb-4">REVIEWS (1,240)</button>
+                    <div class="gap-8 flex items-start text-base border-b border-charcoal pt-8 mb-8 overflow-x-auto">
+                        <button class="text-navy font-medium border-b-2 border-navy pb-4 shrink-0">DESCRIPTION</button>
+                        <button class="text-gray pb-4 shrink-0">PRODUCT DETAILS</button>
+                        <button class="text-gray pb-4 shrink-0">REVIEWS (1,240)</button>
                     </div>
-                    <div class=" text-base text-gray pr-108">
+                    <div class="text-base text-gray w-full lg:pr-108">
                         <p class="mb-6">
                             In the heart of an Victorian-era London that never was, a young apprentice discovers an
                             ancient
@@ -171,8 +172,8 @@
                         </p>
                     </div>
                 </div>
-                <div class=" items-center pb-12 ">
-                    <div class=" flex justify-between items-end mb-8 pt-12">
+                <div class="items-center pb-12">
+                    <div class="flex flex-col sm:flex-row justify-between sm:items-end mb-8 pt-12 gap-4">
                         <div>
                             <h3 class="text-navy font-playfair font-bold text-[32px]">You Might Also Like</h3>
                             <p class="text-gray text-base">Recommended based on this title</p>
@@ -183,7 +184,7 @@
                         </a>
                     </div>
                     <div class="items text-left grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <div class="item">
+                        <div class="item flex flex-col">
                             <img src="./assest/img/the cosmic atlas.png" class="w-full" />
                             <h3 class="text-base font-bold text-dark-gray mt-4">Chronicles of Aether</h3>
                             <p class="text-gray text-xs mb-1">Marcus Thorne</p>
@@ -191,23 +192,23 @@
                                 <p class="text-navy text-base font-bold"> <span>$</span>19.99</p>
                             </div>
                         </div>
-                        <div class="item">
-                            <img src="./assest/img/the silent clock.png" class="w-full " />
+                        <div class="item flex flex-col">
+                            <img src="./assest/img/the silent clock.png" class="w-full" />
                             <h3 class="text-base font-bold text-dark-gray mt-4">The Midnight Orrery</h3>
-                            <p class="text-gray text-xs mb-1 ">Elena Vance</p>
+                            <p class="text-gray text-xs mb-1">Elena Vance</p>
                             <div class="mt-auto flex items-center justify-between pt-1">
                                 <p class="text-navy text-base font-bold"> <span>$</span>22.50</p>
                             </div>
                         </div>
-                        <div class="item">
-                            <img src="./assest/img/the veiled realm.png" class="w-full " />
+                        <div class="item flex flex-col">
+                            <img src="./assest/img/the veiled realm.png" class="w-full" />
                             <h3 class="text-base font-bold text-dark-gray mt-4">Clockwork Silence</h3>
                             <p class="text-gray text-xs mb-1">Julian Gray</p>
                             <div class="mt-auto flex items-center justify-between pt-1">
                                 <p class="text-navy text-base font-bold"> <span>$</span>18.99</p>
                             </div>
                         </div>
-                        <div class="item">
+                        <div class="item flex flex-col">
                             <img src="./assest/img/find your path.png" class="w-full" />
                             <h3 class="text-base font-bold text-dark-gray mt-4">Shadows of Empire</h3>
                             <p class="text-gray text-xs mb-1">L.K. Sterling</p>
@@ -220,11 +221,11 @@
             </div>
         </section>
     </hero>
-    <footer class="bg-navy text-white pt-12 pb-8 ">
-        <div class="container mx-auto ">
-            <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-start gap-6 mb-6">
+    <footer class="bg-navy text-white pt-12 pb-8 w-full">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-start gap-6 mb-6">
                 <div>
-                    <h3 class="font-playfair font-bold text-[32px] mb-[14.75]">
+                    <h3 class="font-playfair font-bold text-[32px] mb-[14.75px]">
                         Bookly
                     </h3>
                     <div class="text-white/80 text-sm flex flex-col">
@@ -308,11 +309,12 @@
                 </div>
             </div>
 
-            <div class="border-t border-white/10 flex text-white/60 text-sm justify-between pt-8">
+            <div
+                class="border-t border-white/10 flex flex-col md:flex-row text-white/60 text-sm justify-between items-center gap-4 pt-8">
                 <div>
                     <p>© 2024 Bookly. All rights reserved.</p>
                 </div>
-                <div class=" flex gap-6">
+                <div class="flex flex-wrap justify-center gap-6">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms of Service</a>
                     <a href="#">Cookie Policy</a>
@@ -321,6 +323,5 @@
         </div>
     </footer>
 </body>
-
 
 </html>
