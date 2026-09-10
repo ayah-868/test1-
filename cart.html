@@ -7,33 +7,33 @@
     <title>Your Cart</title>
     <link rel="stylesheet" href="./src/output.css">
 </head>
-
 <body>
     <header class="py-4 border border-charcoal bg-background">
         <div class="container mx-auto px-4 flex items-center justify-between">
             <div class="flex items-center gap-6 lg:gap-12">
                 <div class="logo">
-                    <a href="#">
-                        <img src="./assest/img/logo.svg" />
+                    <a href="index.html">
+                        <img src="./assets/img/logo.svg" alt="Bookly logo" />
                     </a>
                 </div>
 
                 <nav class="hidden lg:block">
                     <ul class="flex gap-6 items-center text-xs">
                         <li>
-                            <a href="#" class="text-gray">Home</a>
+                            <a href="index.html" class="text-gray hover:text-navy transition">Home</a>
                         </li>
                         <li>
-                            <a href="#" class="text-gray">Browse</a>
+                            <a href="Browse-All-Books.html" class="text-gray hover:text-navy transition">Browse</a>
                         </li>
                         <li>
-                            <a href="#" class="text-gray">Categories</a>
+                            <a href="#" class="text-gray hover:text-navy transition">Categories</a>
                         </li>
                         <li>
-                            <a href="#" class="text-gray">Translate</a>
+                            <a href="Request-a-Book-Translation.html"
+                                class="text-gray hover:text-navy transition">Translate</a>
                         </li>
                         <li>
-                            <a href="#" class="text-gray">Contact</a>
+                            <a href="contact.html" class="text-gray hover:text-navy transition">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -42,7 +42,7 @@
             <div class="flex items-center gap-3 lg:gap-4">
                 <div
                     class="flex items-center gap-2 w-36 sm:w-48 lg:w-61 h-13.5 bg-off-white border border-charcoal rounded-full px-4 py-2">
-                    <img src="./assest/img/icons/search.svg" class="w-4 h-4 shrink-0" />
+                    <img src="./assets/img/icons/search.svg" class="w-4 h-4 shrink-0" alt="Search icon" />
                     <input type="text" placeholder="Search books..."
                         class="bg-transparent outline-none text-xs sm:text-sm w-full" />
                 </div>
@@ -50,8 +50,8 @@
                 <div class="icon flex items-center">
                     <ul class="flex items-center gap-3 lg:gap-4">
                         <li>
-                            <a href="#" class="relative inline-block pb-2 border-b-2 border-navy">
-                                <img src="./assest/img/icons/cart-navy.svg" />
+                            <a href="cart.html" class="relative inline-block pb-2 border-b-2 border-navy">
+                                <img src="./assets/img/icons/cart-navy.svg" alt="Cart icon" />
                                 <span
                                     class="absolute -top-2 -right-3 bg-orange text-brown font-bold text-[10px] w-5 h-5 rounded-full flex items-center justify-center shadow-sm">
                                     3
@@ -59,8 +59,8 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="flex items-center">
-                                <img src="./assest/img/icons/profile.svg" />
+                            <a href="Profile.html" class="flex items-center">
+                                <img src="./assets/img/icons/profile.svg" alt="Profile icon" />
                             </a>
                         </li>
                     </ul>
@@ -68,7 +68,7 @@
             </div>
         </div>
     </header>
-    <hero>
+    <main>
         <section class="bg-background">
             <div class="container mx-auto px-4 py-8 lg:py-12">
                 <div class="mb-8 lg:mb-12">
@@ -88,16 +88,18 @@
 
                         <div
                             class="bg-white p-4 rounded-xl border border-charcoal/20 flex flex-col md:grid md:grid-cols-12 items-start md:items-center gap-4 shadow-sm">
-                            <div class="w-full md:col-span-6 flex items-center gap-4">
-                                <img src="./assest/img/book1.png" class="rounded-md w-16 md:w-auto shrink-0" />
-                                <div>
-                                    <h3 class="font-bold text-dark-gray text-lg md:text-xl">Echoes of Eternity</h3>
-                                    <p class="text-sm md:text-base text-gray">Elena Sterling</p>
+                            <div class="w-full md:col-span-6 flex items-start sm:items-center gap-4">
+                                <img src="./assets/img/book1.png" alt="Echoes of Eternity Book Cover"
+                                    class="rounded-md w-16 md:w-auto shrink-0" />
+                                <div class="flex flex-col">
+                                    <h3 class="font-bold text-dark-gray text-lg md:text-xl leading-tight">Echoes of
+                                        Eternity</h3>
+                                    <p class="text-sm md:text-base text-gray mt-0.5">Elena Sterling</p>
                                     <div class="flex items-center gap-4 mt-2">
                                         <span
                                             class="md:hidden text-xs px-2 py-0.5 bg-background border border-charcoal/20 rounded text-gray">Hardcover</span>
                                         <button class="text-xs text-[#BA1A1A] flex items-center gap-1 hover:underline">
-                                            <img src="./assest/img/icons/remove.svg" />
+                                            <img src="./assets/img/icons/remove.svg" alt="Remove Icon" />
                                             Remove
                                         </button>
                                     </div>
@@ -125,16 +127,18 @@
 
                         <div
                             class="bg-white p-4 rounded-xl border border-charcoal/20 flex flex-col md:grid md:grid-cols-12 items-start md:items-center gap-4 shadow-sm">
-                            <div class="w-full md:col-span-6 flex items-center gap-4">
-                                <img src="./assest/img/book2.png" class="rounded-md w-16 md:w-auto shrink-0" />
-                                <div>
-                                    <h3 class="font-bold text-dark-gray text-lg md:text-xl">The Silent Architect</h3>
-                                    <p class="text-sm md:text-base text-gray">Marcus Thorne</p>
+                            <div class="w-full md:col-span-6 flex items-start sm:items-center gap-4">
+                                <img src="./assets/img/book2.png" alt="The Silent Architect Book Cover"
+                                    class="rounded-md w-16 md:w-auto shrink-0" />
+                                <div class="flex flex-col">
+                                    <h3 class="font-bold text-dark-gray text-lg md:text-xl leading-tight">The Silent
+                                        Architect</h3>
+                                    <p class="text-sm md:text-base text-gray mt-0.5">Marcus Thorne</p>
                                     <div class="flex items-center gap-4 mt-2">
                                         <span
                                             class="md:hidden text-xs px-2 py-0.5 bg-background border border-charcoal/20 rounded text-gray">Paperback</span>
                                         <button class="text-xs text-[#BA1A1A] flex items-center gap-1 hover:underline">
-                                            <img src="./assest/img/icons/remove.svg" />
+                                            <img src="./assets/img/icons/remove.svg" alt="Remove Icon" />
                                             Remove
                                         </button>
                                     </div>
@@ -162,17 +166,20 @@
 
                         <div
                             class="bg-white p-4 rounded-xl border border-charcoal/20 flex flex-col md:grid md:grid-cols-12 items-start md:items-center gap-4 shadow-sm">
-                            <div class="w-full md:col-span-6 flex items-center gap-4">
-                                <img src="./assest/img/book3.png" class="rounded-md w-16 md:w-auto shrink-0" />
-                                <div>
-                                    <h3 class="font-bold text-dark-gray text-lg md:text-xl">Atlas of the Unknown</h3>
-                                    <p class="text-sm md:text-base text-gray">Collector's Edition</p>
+                            <div class="w-full md:col-span-6 flex items-start sm:items-center gap-4">
+                                <img src="./assets/img/book3.png"
+                                    alt="Atlas of the Unknown Collector's Edition Book Cover"
+                                    class="rounded-md w-16 md:w-auto shrink-0" />
+                                <div class="flex flex-col">
+                                    <h3 class="font-bold text-dark-gray text-lg md:text-xl leading-tight">Atlas of the
+                                        Unknown</h3>
+                                    <p class="text-sm md:text-base text-gray mt-0.5">Collector's Edition</p>
                                     <div class="flex items-center gap-4 mt-2">
                                         <span
                                             class="md:hidden text-xs px-2 py-0.5 bg-background border border-charcoal/20 rounded text-gray">Special
                                             Ed.</span>
                                         <button class="text-xs text-[#BA1A1A] flex items-center gap-1 hover:underline">
-                                            <img src="./assest/img/icons/remove.svg" />
+                                            <img src="./assets/img/icons/remove.svg" alt="Remove Icon" />
                                             Remove
                                         </button>
                                     </div>
@@ -201,7 +208,7 @@
                         <div class="pt-4">
                             <a href="index.html"
                                 class="text-navy font-medium text-sm md:text-base flex items-center gap-2 hover:underline">
-                                <img src="./assest/img/icons/back-arrow.svg" />
+                                <img src="./assets/img/icons/back-arrow.svg" alt="Back Arrow Icon" />
                                 Continue Shopping
                             </a>
                         </div>
@@ -244,7 +251,8 @@
                         </div>
                         <div class="bg-[#2E2D7A] p-6 rounded-2xl flex gap-4">
                             <span>
-                                <img src="./assest/img/icons/Secure-Checkout.svg" class="mt-1 w-4 h-5 shrink-0" />
+                                <img src="./assets/img/icons/Secure-Checkout.svg" alt="Secure Checkout Shield Icon"
+                                    class="mt-1 w-4 h-5 shrink-0" />
                             </span>
                             <div class="text-sm md:text-base text-[#9998EC]">
                                 <p class="font-bold mb-1">Secure Checkout</p>
@@ -257,8 +265,8 @@
                 </div>
             </div>
         </section>
-    </hero>
-    <footer class="bg-navy text-white pt-12 pb-8">
+    </main>
+<footer class="bg-navy text-white pt-12 pb-8">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-start gap-8 mb-8">
                 <div>
@@ -273,18 +281,24 @@
                 <div>
                     <h4 class="text-base mb-4 font-bold uppercase">Explore</h4>
                     <ul class="text-base text-white/80">
-                        <li class="mb-2"><a href="#" class="hover:text-white transition">New Arrivals</a></li>
-                        <li class="mb-2"><a href="#" class="hover:text-white transition">Best Sellers</a></li>
-                        <li class="mb-2"><a href="#" class="hover:text-white transition">Coming Soon</a></li>
-                        <li><a href="#" class="hover:text-white transition">Special Editions</a></li>
+                        <li class="mb-2"><a href="Browse-All-Books.html" class="hover:text-white transition">New
+                                Arrivals</a></li>
+                        <li class="mb-2"><a href="Browse-All-Books.html" class="hover:text-white transition">Best
+                                Sellers</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-white transition">Coming
+                                Soon</a></li>
+                        <li><a href="#" class="hover:text-white transition">Special Editions</a>
+                        </li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-base mb-4 font-bold uppercase">Account</h4>
                     <ul class="text-base text-white/80">
-                        <li class="mb-2"><a href="#" class="hover:text-white transition">Shipping Info</a></li>
-                        <li class="mb-2"><a href="#" class="hover:text-white transition">Returns & Refunds</a></li>
-                        <li class="mb-2"><a href="#" class="hover:text-white transition">Help Center</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-white transition">Shipping Info</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="hover:text-white transition">Returns &
+                                Refunds</a></li>
+                        <li class="mb-2"><a href="contact.html" class="hover:text-white transition">Help Center</a></li>
                         <li><a href="#" class="hover:text-white transition">Gift Cards</a></li>
                     </ul>
                 </div>
@@ -295,7 +309,7 @@
                         <input type="text" placeholder="email@example.com"
                             class="text-white placeholder:text-white/40 text-base px-4 py-2.5 mb-2 rounded-lg border border-white/20 bg-transparent outline-none focus:border-orange transition" />
                         <button
-                            class="bg-orange text-base text-brown text-center rounded-lg font-bold py-2 hover:bg-orange/90 transition">Subscribe</button>
+                            class="bg-orange text-base text-brown text-center rounded-lg font-bold py-2 hover:bg-orange/90 transition cursor-pointer">Subscribe</button>
                     </div>
                 </div>
             </div>
@@ -307,18 +321,19 @@
                 </div>
                 <div class="flex gap-4 items-center">
                     <a href="#">
-                        <img src="./assest/img/icons/accessibility.svg" />
+                        <img src="./assets/img/icons/accessibility.svg" alt="Accessibility Icon" />
                     </a>
                     <a href="#">
-                        <img src="./assest/img/icons/at-symbol.svg" />
+                        <img src="./assets/img/icons/at-symbol.svg" alt="At Symbol Icon" />
                     </a>
                     <a href="#">
-                        <img src="./assest/img/icons/rss-feed.svg" />
+                        <img src="./assets/img/icons/rss-feed.svg" alt="RSS Feed Icon" />
                     </a>
                 </div>
             </div>
         </div>
     </footer>
+
 </body>
 
 </html>

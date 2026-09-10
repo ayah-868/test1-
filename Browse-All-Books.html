@@ -13,27 +13,27 @@
     <div class="container mx-auto px-4 flex items-center justify-between">
         <div class="flex items-center gap-6 lg:gap-12">
             <div class="logo">
-                <a href="#">
-                    <img src="./assest/img/logo.svg" />
+                <a href="index.html">
+                    <img src="./assets/img/logo.svg" alt="Bookly logo" />
                 </a>
             </div>
 
             <nav class="hidden lg:block">
                 <ul class="flex gap-6 items-center text-xs">
                     <li>
-                        <a href="#" class="text-gray">Home</a>
+                        <a href="index.html" class="text-gray hover:text-navy transition">Home</a>
                     </li>
                     <li>
-                        <a href="#" class="font-bold text-navy border-b-2 border-navy pb-1">Browse</a>
+                        <a href="Browse-All-Books.html" class="text-gray hover:text-navy transition">Browse</a>
+                    </li>
+                     <li>
+                        <a href="#" class="text-gray hover:text-navy transition-colors">Categories</a>
                     </li>
                     <li>
-                        <a href="#" class="text-gray">Categories</a>
+                        <a href="Request-a-Book-Translation.html" class="text-gray hover:text-navy transition">Translate</a>
                     </li>
                     <li>
-                        <a href="#" class="text-gray">Translate</a>
-                    </li>
-                    <li>
-                        <a href="#" class="text-gray">Contact</a>
+                        <a href="contact.html" class="text-gray hover:text-navy transition">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -41,7 +41,7 @@
 
         <div class="flex items-center gap-3 lg:gap-4">
             <div class="flex items-center gap-2 w-36 sm:w-48 lg:w-61 h-13.5 bg-off-white border border-charcoal rounded-full px-4 py-2">
-                <img src="./assest/img/icons/search.svg" class="w-4 h-4 shrink-0" />
+                <img src="./assets/img/icons/search.svg" alt="Search icon" class="w-4 h-4 shrink-0" />
                 <input type="text" placeholder="Search books..."
                     class="bg-transparent outline-none text-xs sm:text-sm w-full" />
             </div>
@@ -49,8 +49,8 @@
             <div class="icon flex items-center">
                 <ul class="flex items-center gap-3 lg:gap-4">
                     <li>
-                        <a href="#" class="relative inline-block">
-                            <img src="./assest/img/icons/shopping.svg" />
+                        <a href="cart.html" class="relative inline-block">
+                            <img src="./assets/img/icons/shopping.svg" alt="Shopping cart icon" />
                             <span
                                 class="absolute -top-0.5 right-0.5 bg-[#855300] text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center shadow-sm">
                                 2
@@ -58,8 +58,8 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="flex items-center">
-                            <img src="./assest/img/icons/profile.svg" />
+                        <a href="Profile.html" class="flex items-center">
+                            <img src="./assets/img/icons/profile.svg" alt="Profile icon" />
                         </a>
                     </li>
                 </ul>
@@ -67,283 +67,290 @@
         </div>
     </div>
 </header>
- <hero>
-        <section class="bg-background py-8">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+<main>
+    <section class="bg-background py-8">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
 
-                    <div class="lg:col-span-3 flex flex-col">
-                        <h3 class="text-navy font-medium text-xl mb-4">Categories</h3>
-                        <div class="flex flex-col gap-3 text-sm text-gray mb-8">
-                            <label class="flex items-center gap-3 ">
+                <!-- Sidebar Filters -->
+                <div class="lg:col-span-3 flex flex-col">
+                    <h3 class="text-navy font-medium text-xl mb-4">Categories</h3>
+                    <div class="flex flex-col gap-3 text-sm text-gray mb-8">
+                        <label class="flex items-center gap-3">
+                            <input type="checkbox"
+                                class="w-5 h-5 rounded border border-charcoal text-navy focus:ring-navy accent-navy">
+                            <span>Fiction</span>
+                        </label>
+                        <label class="flex items-center gap-3">
+                            <input type="checkbox"
+                                class="w-5 h-5 rounded border border-charcoal text-navy focus:ring-navy accent-navy">
+                            <span>History</span>
+                        </label>
+                        <label class="flex items-center gap-3">
+                            <input type="checkbox"
+                                class="w-5 h-5 rounded border border-charcoal text-navy focus:ring-navy accent-navy">
+                            <span>Science Fiction</span>
+                        </label>
+                        <label class="flex items-center gap-3">
+                            <input type="checkbox"
+                                class="w-5 h-5 rounded border border-charcoal text-navy focus:ring-navy accent-navy">
+                            <span>Biography</span>
+                        </label>
+                        <label class="flex items-center gap-3">
+                            <input type="checkbox"
+                                class="w-5 h-5 rounded border border-charcoal text-navy focus:ring-navy accent-navy">
+                            <span>Poetry</span>
+                        </label>
+                    </div>
+
+                    <h3 class="text-navy font-medium text-xl mb-4">Format</h3>
+                    <div class="grid grid-cols-2 text-xs gap-2 mb-8">
+                        <button type="button"
+                            class="border border-charcoal text-dark-gray rounded-lg py-2 font-medium hover:border-navy transition">Physical</button>
+                        <button type="button"
+                            class="border border-charcoal bg-navy text-white rounded-lg py-2 font-medium">E-Book</button>
+                    </div>
+
+                    <div class="mb-8">
+                        <h3 class="text-navy font-medium text-xl mb-4">Language</h3>
+                        <div class="flex flex-col gap-3 text-sm text-gray">
+                            <label class="flex items-center gap-3">
                                 <input type="checkbox"
-                                    class="w-5 h-5 rounded border border-charcoal text-navy focus:ring-navy accent-navy ">
-                                <span>Fiction</span>
+                                    class="w-5 h-5 rounded border border-charcoal text-navy focus:ring-navy accent-navy">
+                                <span>Arabic</span>
                             </label>
-                            <label class="flex items-center gap-3 ">
-                                <input type="checkbox"
-                                    class="w-5 h-5 rounded border border-charcoal text-navy focus:ring-navy accent-navy ">
-                                <span>History</span>
-                            </label>
-                            <label class="flex items-center gap-3 ">
-                                <input type="checkbox"
-                                    class="w-5 h-5 rounded border border-charcoal text-navy focus:ring-navy accent-navy ">
-                                <span>Science Fiction</span>
-                            </label>
-                            <label class="flex items-center gap-3 ">
-                                <input type="checkbox"
-                                    class="w-5 h-5 rounded border border-charcoal text-navy focus:ring-navy accent-navy ">
-                                <span>Biography</span>
-                            </label>
-                            <label class="flex items-center gap-3 ">
-                                <input type="checkbox"
-                                    class="w-5 h-5 rounded border border-charcoal text-navy focus:ring-navy accent-navy ">
-                                <span>Poetry</span>
-                            </label>
-                        </div>
-                        <h3 class="text-navy font-medium text-xl mb-4">Format</h3>
-                        <div class="grid grid-cols-2 text-xs gap-2 mb-8 ">
-                            <button type="button"
-                                class="border border-charcoal text-dark-gray rounded-lg py-2 font-medium hover:border-navy transition">Physical</button>
-                            <button type="button"
-                                class="border border-charcoal bg-navy text-white rounded-lg py-2 font-medium">E-Book</button>
-                        </div>
-                        <div class="mb-8">
-                            <h3 class="text-navy font-medium text-xl mb-4">Language</h3>
-                            <div class="flex flex-col gap-3 text-sm text-gray">
-                                <label class="flex items-center gap-3">
-                                    <input type="checkbox"
-                                        class="w-5 h-5 rounded border border-charcoal text-navy focus:ring-navy accent-navy">
-                                    <span>Arabic</span>
-                                </label>
-                                <label class="flex items-center gap-3">
-                                    <input type="checkbox" checked
-                                        class="w-5 h-5 rounded border border-charcoal text-navy focus:ring-navy accent-navy">
-                                    <span>English</span>
-                                </label>
-                                <label class="flex items-center gap-3">
-                                    <input type="checkbox"
-                                        class="w-5 h-5 rounded border border-charcoal text-navy focus:ring-navy accent-navy">
-                                    <span>French</span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="mb-8">
-                            <div class="flex justify-between items-center mb-7.5">
-                                <h3 class="text-navy font-medium text-xl">Price Range</h3>
-                                <span class="text-xs text-[#855300] font-bold">$0 - $120</span>
-                            </div>
-                            <input type="range" min="0" max="120" value="120" class="w-full accent-navy cursor-pointer">
-                        </div>
-                        <div class="mb-8">
-                            <h3 class="text-navy items-center font-medium text-xl mb-3">Rating</h3>
-                            <div class="flex items-center justify-between text-sm text-gray">
-                                <div class="flex text-orange gap-1 text-lg">
-                                    <span>★</span>
-                                    <span>★</span>
-                                    <span>★</span>
-                                    <span>★</span>
-                                    <span class="text-transparent [-webkit-text-stroke:0.5px_orange]">★</span>
-                                </div>
-                                <span>& Up</span>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="text-navy font-medium text-xl mb-3">Availability</h3>
-                            <div
-                                class="flex items-center justify-between border border-charcoal rounded-lg p-3 bg-off-white">
-                                <span class="text-sm text-dark-gray font-medium">In Stock Only</span>
+                            <label class="flex items-center gap-3">
                                 <input type="checkbox" checked
-                                    class="w-4 h-4 rounded border border-charcoal text-navy focus:ring-navy accent-navy">
-                            </div>
+                                    class="w-5 h-5 rounded border border-charcoal text-navy focus:ring-navy accent-navy">
+                                <span>English</span>
+                            </label>
+                            <label class="flex items-center gap-3">
+                                <input type="checkbox"
+                                    class="w-5 h-5 rounded border border-charcoal text-navy focus:ring-navy accent-navy">
+                                <span>French</span>
+                            </label>
                         </div>
                     </div>
 
-                    <div class="lg:col-span-9 flex flex-col">
-                        <div
-                            class="bg-white border border-charcoal rounded-xl p-4 sm:p-5 flex flex-col sm:flex-row justify-between items-center mb-8 shadow-sm">
-                            <h2 class="text-navy font-playfair font-bold text-2xl sm:text-[32px] mb-4 sm:mb-0">
-                                Showing 48 books
-                            </h2>
-                            <div class="flex items-center gap-3 w-full sm:w-auto justify-end">
-                                <span class="text-xs sm:text-sm text-gray font-medium">Sort by:</span>
-                                <div class="relative">
-                                    <select
-                                        class="appearance-none bg-white border border-charcoal rounded-lg px-4 py-2 pr-8 text-xs sm:text-sm text-navy font-medium focus:outline-none cursor-pointer">
-                                        <option>Newest Arrivals</option>
-                                        <option>Price: Low to High</option>
-                                        <option>Price: High to Low</option>
-                                        <option>Highest Rated</option>
-                                    </select>
-                                    <div
-                                        class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-navy">
-                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M19 9l-7 7-7-7"></path>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="mb-8">
+                        <div class="flex justify-between items-center mb-7.5">
+                            <h3 class="text-navy font-medium text-xl">Price Range</h3>
+                            <span class="text-xs text-[#855300] font-bold">$0 - $120</span>
                         </div>
+                        <input type="range" min="0" max="120" value="120" class="w-full accent-navy cursor-pointer">
+                    </div>
 
-                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-8">
-
-                            <div
-                                class="bg-white p-4 rounded-xl sm:rounded-e-xl border border-charcoal shadow-sm flex flex-col justify-between hover:shadow-md transition">
-                                <div>
-                                    <img src="./assest/img/The Shadow of the Wind.jpg"
-                                        class="w-full h-64 object-cover rounded-xl mb-4">
-                                    <div class="flex gap-2 pt-3 mb-1">
-                                        <span
-                                            class="bg-purple text-navy text-[10px] font-bold px-2 py-1 rounded">FICTION</span>
-                                        <span
-                                            class="bg-[#FFDDB8] text-brown text-[10px] font-bold px-2 py-1 rounded">E-BOOK</span>
-                                    </div>
-                                    <h3 class="text-dark-gray font-bold text-xl pt-2 mb-1">The Shadow of Winds</h3>
-                                    <p class="text-gray text-sm pb-2 mb-1">by Carlos Ruiz Zafón</p>
-                                </div>
-                                <div class="flex items-center justify-between pt-3 border-t border-charcoal">
-                                    <span class="text-navy font-bold text-lg">$24.50</span>
-                                    <div class="flex items-center gap-1 text-orange text-sm font-bold">
-                                        <span>★</span>
-                                        <span class="text-dark-gray text-xs">4.8</span>
-                                    </div>
-                                </div>
+                    <div class="mb-8">
+                        <h3 class="text-navy items-center font-medium text-xl mb-3">Rating</h3>
+                        <div class="flex items-center justify-between text-sm text-gray">
+                            <div class="flex text-orange gap-1 text-lg">
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                                <span class="text-transparent [-webkit-text-stroke:0.5px_orange]">★</span>
                             </div>
-
-                            <div
-                                class="bg-white p-4 rounded-xl sm:rounded-e-xl border border-charcoal shadow-sm flex flex-col justify-between hover:shadow-md transition">
-                                <div>
-                                    <img src="./assest/img/The Shadow of the Wind.jpg"
-                                        class="w-full h-64 object-cover rounded-xl mb-4">
-                                    <div class="flex gap-2 pt-3 mb-1">
-                                        <span
-                                            class="bg-[#EDE9FE] text-[#7C3AED] text-[10px] font-bold px-2 py-1 rounded">HISTORY</span>
-                                    </div>
-                                    <h3 class="text-dark-gray font-bold text-xl pt-2 mb-1">Empire of Silence</h3>
-                                    <p class="text-gray text-sm pb-2 mb-1">by Christopher Ruocchio</p>
-                                </div>
-                                <div class="flex items-center justify-between pt-3 border-t border-charcoal">
-                                    <span class="text-navy font-bold text-lg">$19.99</span>
-                                    <div class="flex items-center gap-1 text-orange text-sm font-bold">
-                                        <span>★</span>
-                                        <span class="text-dark-gray text-xs">4.9</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div
-                                class="bg-white p-4 rounded-xl sm:rounded-e-xl border border-charcoal shadow-sm flex flex-col justify-between hover:shadow-md transition">
-                                <div>
-                                    <img src="./assest/img/The Shadow of the Wind.jpg"
-                                        class="w-full h-64 object-cover rounded-xl mb-4">
-                                    <div class="flex gap-2 pt-3 mb-1">
-                                        <span
-                                            class="bg-[#DCFCE7] text-[#15803D] text-[10px] font-bold px-2 py-1 rounded">SCI-FI</span>
-                                        <span
-                                            class="bg-[#FEF9C3] text-[#A16207] text-[10px] font-bold px-2 py-1 rounded">NEW</span>
-                                    </div>
-                                    <h3 class="text-dark-gray font-bold text-xl pt-2 mb-1">Nebula Rising</h3>
-                                    <p class="text-gray text-sm pb-2 mb-1">by Sarah J. Maas</p>
-                                </div>
-                                <div class="flex items-center justify-between pt-3 border-t border-charcoal">
-                                    <span class="text-navy font-bold text-lg">$32.00</span>
-                                    <div class="flex items-center gap-1 text-orange text-sm font-bold">
-                                        <span>★</span>
-                                        <span class="text-dark-gray text-xs">4.9</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div
-                                class="bg-white p-4 rounded-xl sm:rounded-e-xl border border-charcoal shadow-sm flex flex-col justify-between hover:shadow-md transition">
-                                <div>
-                                    <img src="./assest/img/The Shadow of the Wind.jpg"
-                                        class="w-full h-64 object-cover rounded-xl mb-4">
-                                    <div class="flex gap-2 pt-3 mb-1">
-                                        <span
-                                            class="bg-purple text-navy text-[10px] font-bold px-2 py-1 rounded">BIOGRAPHY</span>
-                                    </div>
-                                    <h3 class="text-dark-gray font-bold text-xl pt-2 mb-1">Leonardo Da Vinci</h3>
-                                    <p class="text-gray text-sm pb-2 mb-1">by Walter Isaacson</p>
-                                </div>
-                                <div class="flex items-center justify-between pt-3 border-t border-charcoal">
-                                    <span class="text-navy font-bold text-lg">$15.50</span>
-                                    <div class="flex items-center gap-1 text-orange text-sm font-bold">
-                                        <span>★</span>
-                                        <span class="text-dark-gray text-xs">4.7</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div
-                                class="bg-white p-4 rounded-xl sm:rounded-e-xl border border-charcoal shadow-sm flex flex-col justify-between hover:shadow-md transition">
-                                <div>
-                                    <img src="./assest/img/The Shadow of the Wind.jpg"
-                                        class="w-full h-64 object-cover rounded-xl mb-4">
-                                    <div class="flex gap-2 pt-3 mb-1">
-                                        <span
-                                            class="bg-purple text-navy text-[10px] font-bold px-2 py-1 rounded">FICTION</span>
-                                    </div>
-                                    <h3 class="text-dark-gray font-bold text-xl pt-2 mb-1">The Night Circus</h3>
-                                    <p class="text-gray text-sm pb-2 mb-1">by Erin Morgenstern</p>
-                                </div>
-                                <div class="flex items-center justify-between pt-3 border-t border-charcoal">
-                                    <span class="text-navy font-bold text-lg">$28.00</span>
-                                    <div class="flex items-center gap-1 text-orange text-sm font-bold">
-                                        <span>★</span>
-                                        <span class="text-dark-gray text-xs">4.9</span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div
-                                class="bg-white p-4 rounded-xl sm:rounded-e-xl border border-charcoal shadow-sm flex flex-col justify-between hover:shadow-md transition">
-                                <div>
-                                    <img src="./assest/img/The Shadow of the Wind.jpg"
-                                        class="w-full h-64 object-cover rounded-xl mb-4">
-                                    <div class="flex gap-2 pt-3 mb-1">
-                                        <span
-                                            class="bg-purple text-navy text-[10px] font-bold px-2 py-1 rounded">FICTION</span>
-                                    </div>
-                                    <h3 class="text-dark-gray font-bold text-xl pt-2 mb-1">Midnight Library</h3>
-                                    <p class="text-gray text-sm pb-2 mb-1">by Matt Haig</p>
-                                </div>
-                                <div class="flex items-center justify-between pt-3 border-t border-charcoal">
-                                    <span class="text-navy font-bold text-lg">$21.75</span>
-                                    <div class="flex items-center gap-1 text-orange text-sm font-bold">
-                                        <span>★</span>
-                                        <span class="text-dark-gray text-xs">4.8</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="flex items-center justify-center gap-2 mt-8">
-                            <button type="button" class="w-10 h-10 flex items-center justify-center bg-white border border-charcoal rounded-lg text-navy hover:border-navy transition"> <
-                            </button>
-                            <button type="button" class="w-10 h-10 flex items-center justify-center bg-navy text-white font-medium rounded-lg">1</button>
-                            <button type="button" class="w-10 h-10 flex items-center justify-center bg-white border border-charcoal text-navy font-medium rounded-lg hover:border-navy transition">2</button>
-                            <button type="button" class="w-10 h-10 flex items-center justify-center bg-white border border-charcoal text-navy font-medium rounded-lg hover:border-navy transition">3</button>
-                            <span class="px-1 text-gray font-medium">...</span>
-                            <button type="button" class="w-10 h-10 flex items-center justify-center bg-white border border-charcoal text-navy font-medium rounded-lg hover:border-navy transition">12</button>
-                            <button type="button" class="w-10 h-10 flex items-center justify-center bg-white border border-charcoal rounded-lg text-navy hover:border-navy transition"> >
-                            </button>
+                            <span>& Up</span>
                         </div>
                     </div>
 
+                    <div>
+                        <h3 class="text-navy font-medium text-xl mb-3">Availability</h3>
+                        <div class="flex items-center justify-between border border-charcoal rounded-lg p-3 bg-off-white">
+                            <span class="text-sm text-dark-gray font-medium">In Stock Only</span>
+                            <input type="checkbox" checked
+                                class="w-4 h-4 rounded border border-charcoal text-navy focus:ring-navy accent-navy">
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Books Grid Section -->
+                <div class="lg:col-span-9 flex flex-col">
+                    <div class="bg-white border border-charcoal rounded-xl p-4 sm:p-5 flex flex-col sm:flex-row justify-between items-center mb-8 shadow-sm">
+                        <h2 class="text-navy font-playfair font-bold text-2xl sm:text-[32px] mb-4 sm:mb-0">
+                            Showing 48 books
+                        </h2>
+                        <div class="flex items-center gap-3 w-full sm:w-auto justify-end">
+                            <span class="text-xs sm:text-sm text-gray font-medium">Sort by:</span>
+                            <div>
+                                <select class="bg-white border border-charcoal rounded-lg px-4 py-2 pr-8 text-xs sm:text-sm text-navy font-medium focus:outline-none cursor-pointer">
+                                    <option>Newest Arrivals</option>
+                                    <option>Price: Low to High</option>
+                                    <option>Price: High to Low</option>
+                                    <option>Highest Rated</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Books Cards Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-8">
+
+                        <!-- Book 1 -->
+                        <div class="bg-white p-4 rounded-xl sm:rounded-e-xl border border-charcoal shadow-sm flex flex-col justify-between hover:shadow-md transition">
+                            <div>
+                                <a href="book-details.html">
+                                    <img src="./assets/img/The Shadow of the Wind.jpg" alt="The Shadow of the Winds book cover" class="w-full h-64 object-cover rounded-xl mb-4">
+                                </a>
+                                <div class="flex gap-2 pt-3 mb-1">
+                                    <span class="bg-purple text-navy text-[10px] font-bold px-2 py-1 rounded">FICTION</span>
+                                    <span class="bg-[#FFDDB8] text-brown text-[10px] font-bold px-2 py-1 rounded">E-BOOK</span>
+                                </div>
+                                <h3 class="text-dark-gray font-bold text-xl pt-2 mb-1">
+                                    <a href="book-details.html" class="hover:text-navy transition">The Shadow of Winds</a>
+                                </h3>
+                                <p class="text-gray text-sm pb-2 mb-1">by Carlos Ruiz Zafón</p>
+                            </div>
+                            <div class="flex items-center justify-between pt-3 border-t border-charcoal">
+                                <span class="text-navy font-bold text-lg">$24.50</span>
+                                <div class="flex items-center gap-1 text-orange text-sm font-bold">
+                                    <span>★</span>
+                                    <span class="text-dark-gray text-xs">4.8</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Book 2 -->
+                        <div class="bg-white p-4 rounded-xl sm:rounded-e-xl border border-charcoal shadow-sm flex flex-col justify-between hover:shadow-md transition">
+                            <div>
+                                <a href="book-details.html">
+                                    <img src="./assets/img/The Shadow of the Wind.jpg" alt="Empire of Silence book cover" class="w-full h-64 object-cover rounded-xl mb-4">
+                                </a>
+                                <div class="flex gap-2 pt-3 mb-1">
+                                    <span class="bg-[#EDE9FE] text-[#7C3AED] text-[10px] font-bold px-2 py-1 rounded">HISTORY</span>
+                                </div>
+                                <h3 class="text-dark-gray font-bold text-xl pt-2 mb-1">
+                                    <a href="book-details.html" class="hover:text-navy transition">Empire of Silence</a>
+                                </h3>
+                                <p class="text-gray text-sm pb-2 mb-1">by Christopher Ruocchio</p>
+                            </div>
+                            <div class="flex items-center justify-between pt-3 border-t border-charcoal">
+                                <span class="text-navy font-bold text-lg">$19.99</span>
+                                <div class="flex items-center gap-1 text-orange text-sm font-bold">
+                                    <span>★</span>
+                                    <span class="text-dark-gray text-xs">4.9</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Book 3 -->
+                        <div class="bg-white p-4 rounded-xl sm:rounded-e-xl border border-charcoal shadow-sm flex flex-col justify-between hover:shadow-md transition">
+                            <div>
+                                <a href="book-details.html">
+                                    <img src="./assets/img/The Shadow of the Wind.jpg" alt="Nebula Rising book cover" class="w-full h-64 object-cover rounded-xl mb-4">
+                                </a>
+                                <div class="flex gap-2 pt-3 mb-1">
+                                    <span class="bg-[#DCFCE7] text-[#15803D] text-[10px] font-bold px-2 py-1 rounded">SCI-FI</span>
+                                    <span class="bg-[#FEF9C3] text-[#A16207] text-[10px] font-bold px-2 py-1 rounded">NEW</span>
+                                </div>
+                                <h3 class="text-dark-gray font-bold text-xl pt-2 mb-1">
+                                    <a href="book-details.html" class="hover:text-navy transition">Nebula Rising</a>
+                                </h3>
+                                <p class="text-gray text-sm pb-2 mb-1">by Sarah J. Maas</p>
+                            </div>
+                            <div class="flex items-center justify-between pt-3 border-t border-charcoal">
+                                <span class="text-navy font-bold text-lg">$32.00</span>
+                                <div class="flex items-center gap-1 text-orange text-sm font-bold">
+                                    <span>★</span>
+                                    <span class="text-dark-gray text-xs">4.9</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Book 4 -->
+                        <div class="bg-white p-4 rounded-xl sm:rounded-e-xl border border-charcoal shadow-sm flex flex-col justify-between hover:shadow-md transition">
+                            <div>
+                                <a href="book-details.html">
+                                    <img src="./assets/img/The Shadow of the Wind.jpg" alt="Leonardo Da Vinci book cover" class="w-full h-64 object-cover rounded-xl mb-4">
+                                </a>
+                                <div class="flex gap-2 pt-3 mb-1">
+                                    <span class="bg-purple text-navy text-[10px] font-bold px-2 py-1 rounded">BIOGRAPHY</span>
+                                </div>
+                                <h3 class="text-dark-gray font-bold text-xl pt-2 mb-1">
+                                    <a href="book-details.html" class="hover:text-navy transition">Leonardo Da Vinci</a>
+                                </h3>
+                                <p class="text-gray text-sm pb-2 mb-1">by Walter Isaacson</p>
+                            </div>
+                            <div class="flex items-center justify-between pt-3 border-t border-charcoal">
+                                <span class="text-navy font-bold text-lg">$15.50</span>
+                                <div class="flex items-center gap-1 text-orange text-sm font-bold">
+                                    <span>★</span>
+                                    <span class="text-dark-gray text-xs">4.7</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Book 5 -->
+                        <div class="bg-white p-4 rounded-xl sm:rounded-e-xl border border-charcoal shadow-sm flex flex-col justify-between hover:shadow-md transition">
+                            <div>
+                                <a href="book-details.html">
+                                    <img src="./assets/img/The Shadow of the Wind.jpg" alt="The Night Circus book cover" class="w-full h-64 object-cover rounded-xl mb-4">
+                                </a>
+                                <div class="flex gap-2 pt-3 mb-1">
+                                    <span class="bg-purple text-navy text-[10px] font-bold px-2 py-1 rounded">FICTION</span>
+                                </div>
+                                <h3 class="text-dark-gray font-bold text-xl pt-2 mb-1">
+                                    <a href="book-details.html" class="hover:text-navy transition">The Night Circus</a>
+                                </h3>
+                                <p class="text-gray text-sm pb-2 mb-1">by Erin Morgenstern</p>
+                            </div>
+                            <div class="flex items-center justify-between pt-3 border-t border-charcoal">
+                                <span class="text-navy font-bold text-lg">$28.00</span>
+                                <div class="flex items-center gap-1 text-orange text-sm font-bold">
+                                    <span>★</span>
+                                    <span class="text-dark-gray text-xs">4.9</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Book 6 -->
+                        <div class="bg-white p-4 rounded-xl sm:rounded-e-xl border border-charcoal shadow-sm flex flex-col justify-between hover:shadow-md transition">
+                            <div>
+                                <a href="book-details.html">
+                                    <img src="./assets/img/The Shadow of the Wind.jpg" alt="Midnight Library book cover" class="w-full h-64 object-cover rounded-xl mb-4">
+                                </a>
+                                <div class="flex gap-2 pt-3 mb-1">
+                                    <span class="bg-purple text-navy text-[10px] font-bold px-2 py-1 rounded">FICTION</span>
+                                </div>
+                                <h3 class="text-dark-gray font-bold text-xl pt-2 mb-1">
+                                    <a href="book-details.html" class="hover:text-navy transition">Midnight Library</a>
+                                </h3>
+                                <p class="text-gray text-sm pb-2 mb-1">by Matt Haig</p>
+                            </div>
+                            <div class="flex items-center justify-between pt-3 border-t border-charcoal">
+                                <span class="text-navy font-bold text-lg">$21.75</span>
+                                <div class="flex items-center gap-1 text-orange text-sm font-bold">
+                                    <span>★</span>
+                                    <span class="text-dark-gray text-xs">4.8</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="flex items-center justify-center gap-2 mt-8">
+                        <button type="button" class="w-10 h-10 flex items-center justify-center bg-white border border-charcoal rounded-lg text-navy hover:border-navy transition">&lt;</button>
+                        <button type="button" class="w-10 h-10 flex items-center justify-center bg-navy text-white font-medium rounded-lg">1</button>
+                        <button type="button" class="w-10 h-10 flex items-center justify-center bg-white border border-charcoal text-navy font-medium rounded-lg hover:border-navy transition">2</button>
+                        <button type="button" class="w-10 h-10 flex items-center justify-center bg-white border border-charcoal text-navy font-medium rounded-lg hover:border-navy transition">3</button>
+                        <span class="px-1 text-gray font-medium">...</span>
+                        <button type="button" class="w-10 h-10 flex items-center justify-center bg-white border border-charcoal text-navy font-medium rounded-lg hover:border-navy transition">12</button>
+                        <button type="button" class="w-10 h-10 flex items-center justify-center bg-white border border-charcoal rounded-lg text-navy hover:border-navy transition">&gt;</button>
+                    </div>
+                </div>
+
             </div>
-        </section>
-    </hero>
- <footer class="bg-navy text-white pt-16 pb-8 w-full">
+        </div>
+    </section>
+</main>
+<footer class="bg-navy text-white pt-16 pb-8 w-full">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-x-8 lg:gap-x-12 gap-y-8 mb-12">
 
                 <div class="lg:col-span-4 flex flex-col">
                     <h3 class="font-playfair font-bold text-[32px] mb-4">
-                        Bookly
+                        <a href="index.html">Bookly</a>
                     </h3>
                     <p class="text-white/70 text-xs sm:text-sm max-w-75">
                         Elevating your reading experience through curated selections and modern accessibility.
@@ -353,21 +360,20 @@
                 <div class="lg:col-span-2 flex flex-col">
                     <h4 class="text-base font-bold mb-4">Explore</h4>
                     <ul class="text-xs text-white/70 flex flex-col gap-2">
-                        <li><a href="#" class="hover:text-white transition underline font-medium">Browse Catalog</a></li>
-                        <li><a href="#" class="hover:text-white transition">Best Sellers</a></li>
-                        <li><a href="#" class="hover:text-white transition">New Arrivals</a></li>
+                        <li><a href="Browse-All-Books.html" class="hover:text-white transition underline font-medium">Browse Catalog</a></li>
+                        <li><a href="Browse-All-Books.html" class="hover:text-white transition">Best Sellers</a></li>
+                        <li><a href="Browse-All-Books.html" class="hover:text-white transition">New Arrivals</a></li>
                         <li><a href="#" class="hover:text-white transition">E-Books</a></li>
                     </ul>
                 </div>
 
-                <!-- قسم الـ Account -->
                 <div class="lg:col-span-2 flex flex-col">
                     <h4 class="text-base font-bold mb-4">Account</h4>
                     <ul class="text-xs text-white/70 flex flex-col gap-2">
-                        <li><a href="#" class="hover:text-white transition">My Profile</a></li>
-                        <li><a href="#" class="hover:text-white transition">Orders</a></li>
-                        <li><a href="#" class="hover:text-white transition">Wishlist</a></li>
-                        <li><a href="#" class="hover:text-white transition">Support</a></li>
+                        <li><a href="Profile.html" class="hover:text-white transition">My Profile</a></li>
+                        <li><a href="cart.html" class="hover:text-white transition">Orders</a></li>
+                        <li><a href="Profile.html" class="hover:text-white transition">Wishlist</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition">Support</a></li>
                     </ul>
                 </div>
 
@@ -380,7 +386,7 @@
                         <input type="email" placeholder="Email address"
                             class="bg-white/10 border border-white/20 text-white placeholder-white/40 text-xs sm:text-sm px-4 py-3 rounded-lg outline-none focus:border-white transition">
                         <button type="submit"
-                            class="bg-[#FFB703] hover:bg-[#FFB703]/90 text-black font-medium px-6 py-3 rounded-lg text-xs sm:text-sm transition shrink-0">
+                            class="bg-[#FFB703] hover:bg-[#FFB703]/90 text-black font-medium px-6 py-3 rounded-lg text-xs sm:text-sm transition shrink-0 cursor-pointer">
                             Join
                         </button>
                     </form>
@@ -388,10 +394,9 @@
 
             </div>
 
-            <div
-                class="border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-white/60 text-xs pt-8 gap-4">
+            <div class="border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-white/60 text-xs pt-8 gap-4">
                 <div>
-                    <p>© 2024 Bookly. All rights reserved.</p>
+                    <p>&copy; 2026 Bookly. All rights reserved.</p>
                 </div>
 
                 <div class="flex items-center gap-6">
